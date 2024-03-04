@@ -2,37 +2,80 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+#Ukraine {
+  height: 100vh;
+}
+
+#KyivCity {
+  fill: #3184ea;
+  opacity: 0;
+}
+
+.mapBackground {
+  /* fill: #74b2ff; */
+  stroke: #000;
+  stroke-width: 0.5;
+}
+.image {
+  z-index: 11;
+}
+
+#Ukraine path:hover {
+  fill: #97c2f8;
+}
+
+.pointerCircle {
+  border-radius: 2px;
+  fill: #f00;
+  stroke-linecap: square;
+  stroke-linejoin: bevel;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  stroke-opacity: 1;
+}
+
+.cityName {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
   pointer-events: none;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 0.7em;
+  fill: #000;
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0,
+    white 1px -1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Kiev:hover ~ .cityKiev,
+#KyivCity:hover ~ .cityKiev,
+#SevastopolCity:hover ~ .citySevastopol,
+#Crimea:hover ~ .citySimferopol,
+#Cherkasy:hover ~ .cityCherkasy,
+#Chernivtsi:hover ~ .cityChernivtsi,
+#Dnipropetrovsk:hover ~ .cityDnipro,
+#Donetsk:hover ~ .cityDonetsk,
+#Ivano-Frankivsk:hover ~ .cityIvano-Frankivsk,
+#Kharkiv:hover ~ .cityKharkiv,
+#Kherson:hover ~ .cityKherson,
+#Khmelnytskyi:hover ~ .cityKhmelnytskyi,
+#Kirovohrad:hover ~ .cityKropyvnytskyi,
+#Luhansk:hover ~ .cityLuhansk,
+#Lviv:hover ~ .cityLviv,
+#Mykolaiv:hover ~ .cityMykolaiv,
+#Odessa:hover ~ .cityOdessa,
+#Poltava:hover ~ .cityPoltava,
+#Rivne:hover ~ .cityRivne,
+#Sumu:hover ~ .citySumu,
+#Chernihiv:hover ~ .cityChernihiv,
+#Ternopil:hover ~ .cityTernopil,
+#Zakarpattia:hover ~ .cityUzhhorod,
+#Vinnytsia:hover ~ .cityVinnytsia,
+#Volyn:hover ~ .cityLutsk,
+#Zaporizhia:hover ~ .cityZaporizhia,
+#Zhytomyr:hover ~ .cityZhytomyr {
+  visibility: visible;
+  opacity: 1;
 }

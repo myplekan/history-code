@@ -1504,11 +1504,6 @@ function App() {
             <text transform="matrix(1 0 0 1 390 394)">Севастополь</text>
             <circle cx="388" cy="396" className="pointerCircle"></circle>
           </g>
-          {/* <g>
-            <text transform="matrix(1 0 0 1 490 400)" className="cityName">
-              made by Andry Zirka
-            </text>
-          </g> */}
         </g>
       </svg>
     </div>

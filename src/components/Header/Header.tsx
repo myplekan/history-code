@@ -3,7 +3,7 @@ import { Nav } from "../Nav/Nav";
 
 export const Header = () => {
   return (
-    <header className="flex justify-between items-center px-7 h-11 bg-header-opacity-50 fixed w-full">
+    <header className="flex justify-between items-center px-10 h-11 bg-header-opacity-50 fixed w-full">
       <Logo />
 
       <Nav />

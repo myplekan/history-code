@@ -5,20 +5,16 @@ module.exports = {
     extend: {
       colors: {
         "header-opacity-50": "rgba(255, 255, 255, 0.5)",
-        "primary": "rgb(240,187,18)",
-        "blue": "rgb(0,122,255)",
+        primary: "rgb(240, 187, 18)",
+        footer: "rgb(233, 236, 239)",
+        blue: "rgb(0,122,255)",
       },
-      height: {
-        'main': 'calc(100vh - 44px)',
-      },
+      height: {},
     },
     fontFamily: {
-      'sans': ['Montserrat', 'ui-sans-serif', 'system-ui'],
-      'rutenia': ["Rutenia", "sans-serif"],
-    }
+      sans: ["Montserrat", "ui-sans-serif", "system-ui"],
+      rutenia: ["Rutenia", "sans-serif"],
+    },
   },
-  plugins: [
-    require('tailwindcss-animated')
-  ],
-}
-
+  plugins: [require("tailwindcss-animated")],
+};

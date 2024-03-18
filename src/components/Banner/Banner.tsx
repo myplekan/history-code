@@ -20,7 +20,7 @@ export const Banner = () => {
               <img
                 src={process.env.PUBLIC_URL + `/images/${slide}.png`}
                 alt="Ukraine"
-                className="max-h-screen w-full object-cover"
+                className="h-screen w-full object-cover"
               />
             </SwiperSlide>
           ))}

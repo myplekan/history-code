@@ -1,6 +1,13 @@
 import { NavLink } from "react-router-dom";
 
 export const Nav = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav>
       <ul className="flex gap-16">
@@ -8,6 +15,7 @@ export const Nav = () => {
           <NavLink
             to="/history"
             className="hover:text-primary font-medium duration-300"
+            onClick={scrollToTop}
           >
             Історія
           </NavLink>
@@ -16,6 +24,7 @@ export const Nav = () => {
           <NavLink
             to="/culture"
             className="hover:text-primary font-medium duration-300"
+            onClick={scrollToTop}
           >
             Культура
           </NavLink>
@@ -24,6 +33,7 @@ export const Nav = () => {
           <NavLink
             to="/regions"
             className="hover:text-primary font-medium duration-300"
+            onClick={scrollToTop}
           >
             Регіони України
           </NavLink>

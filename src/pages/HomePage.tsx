@@ -1,21 +1,10 @@
-import { useEffect, useState } from "react";
 import { Banner } from "../components/Banner/Banner";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 export const HomePage = () => {
-  const [word, setWord] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setWord((prevIndex) => {
-        return prevIndex === 2 ? 0 : prevIndex + 1;
-      });
-    }, 5000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [word]);
   return (
     <>
       <Banner />
@@ -33,23 +22,25 @@ export const HomePage = () => {
           Читати більше
         </Link>
 
-        <span className="text-6xl">
-          {word === 0 && (
-            <span className="animate-fade-left animate-duration-[2000ms] animate-ease-linear">
-              Вільна
-            </span>
-          )}
-          {word === 1 && (
-            <span className="animate-fade-left animate-duration-[2000ms] animate-ease-linear">
-              Сильна
-            </span>
-          )}
-          {word === 2 && (
-            <span className="animate-fade-left animate-duration-[2000ms] animate-ease-linear">
-              Незалежна
-            </span>
-          )}
-        </span>
+        <div className="w-full text-6xl">
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={1}
+            autoplay={{ delay: 5000 }}
+            speed={1000}
+            simulateTouch={false}
+          >
+            <SwiperSlide>
+                Вільна
+            </SwiperSlide>
+            <SwiperSlide>
+                Сильна
+            </SwiperSlide>
+            <SwiperSlide>
+                Незалежна
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </>
   );

@@ -7,7 +7,7 @@ export const Nav = () => {
         <li>
           <NavLink
             to="/history"
-            className="hover:text-primary hover:drop-shadow-md hover:font-semibold duration-300"
+            className="hover:text-primary font-medium duration-300"
           >
             Історія
           </NavLink>
@@ -15,7 +15,7 @@ export const Nav = () => {
         <li>
           <NavLink
             to="/culture"
-            className="hover:text-primary hover:drop-shadow-md hover:font-semibold duration-300"
+            className="hover:text-primary font-medium duration-300"
           >
             Культура
           </NavLink>
@@ -23,7 +23,7 @@ export const Nav = () => {
         <li>
           <NavLink
             to="/regions"
-            className="hover:text-primary hover:drop-shadow-md hover:font-semibold duration-300"
+            className="hover:text-primary font-medium duration-300"
           >
             Регіони України
           </NavLink>

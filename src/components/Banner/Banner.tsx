@@ -1,83 +1,31 @@
-import { useEffect, useState } from "react";
-import './Banner.css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 export const Banner = () => {
-  const [firstImage, setFirstImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setFirstImage((prevIndex) => {
-        return prevIndex === 2 ? 0 : prevIndex + 1;
-      });
-    }, 5000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [firstImage]);
-
-  const pageWidth = window.innerWidth;
-  // const findWidth = (width: number) => {
-  //   switch (true) {
-  //     case width >= 1440:
-  //       return 1440;
-  //     case width < 1200 && width >= 640:
-  //       return 496;
-  //     case width < 640 && width >= 320:
-  //       return 288;
-  //     default:
-  //       break;
-  //   }
-  // };
-  // let transformWidth = findWidth(pageWidth) || 1440;
+  const arr = ["first", "second", "third"];
 
   return (
     <>
-      {true && (
-        <div className="banner">
-          <ul className="banner__list">
-            <li
-              className="banner__item"
-              style={{
-                transform: `translateX(${-(pageWidth * firstImage)}px)`,
-                transition: "transform 1000ms",
-              }}
-            >
+      <div className="absolute w-full -z-10">
+        <Swiper
+          slidesPerView={1}
+          modules={[Autoplay]}
+          autoplay={{ delay: 5000 }}
+          speed={1000}
+          simulateTouch={false}
+        >
+          {arr.map((slide) => (
+            <SwiperSlide key={slide}>
               <img
-                src={process.env.PUBLIC_URL + "/images/first.png"}
+                src={process.env.PUBLIC_URL + `/images/${slide}.png`}
                 alt="Ukraine"
-                className="banner__item-image"
+                className="max-h-screen w-full object-cover"
               />
-            </li>
-            <li
-              className="banner__item"
-              style={{
-                transform: `translateX(${-(pageWidth * firstImage)}px)`,
-                transition: "transform 1000ms",
-              }}
-            >
-              <img
-                src={process.env.PUBLIC_URL + "/images/second.png"}
-                alt="Ukraine"
-                className="banner__item-image"
-              />
-            </li>
-            <li
-              className="banner__item"
-              style={{
-                transform: `translateX(${-(pageWidth * firstImage)}px)`,
-                transition: "transform 1000ms",
-              }}
-            >
-              <img
-                src={process.env.PUBLIC_URL + "/images/third.png"}
-                alt="Ukraine"
-                className="banner__item-image"
-              />
-            </li>
-          </ul>
-        </div>
-      )}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </>
   );
 };

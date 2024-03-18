@@ -1,3 +1,5 @@
+import '../styles/RegionsPage.css';
+
 export const RegionsPage = () => {
   return (
       <svg

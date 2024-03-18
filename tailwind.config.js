@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "header-opacity-50": "rgba(255, 255, 255, 0.5)",
         "primary": "rgb(240,187,18)",
+        "blue": "rgb(0,122,255)",
       },
       height: {
         'main': 'calc(100vh - 44px)',

@@ -3,8 +3,33 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { useEffect, useState } from "react";
 
 export const HomePage = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <Banner />
@@ -17,7 +42,7 @@ export const HomePage = () => {
 
         <Link
           to="/"
-          className="flex self-center justify-center items-center bg-primary px-6 py-5 rounded-full mb-9 text-xl font-semibold hover:bg-blue duration-300"
+          className="flex self-center justify-center items-center bg-primary px-6 py-5 rounded-full mb-9 text-xl font-semibold hover:bg-second duration-300"
         >
           Читати більше
         </Link>
@@ -108,23 +133,23 @@ export const HomePage = () => {
         <div className="col-start-1 col-end-5 pl-10 pt-24">
           <h2 className="font-rutenia text-5xl mb-6">Говерла</h2>
 
-          <div className="flex gap-4 mb-7">
+          <div className="flex gap-4 mb-4">
             <div className="bg-primary max-h-full w-1 "></div>
             <div className="text-2xl">
               Найвища гора в Україні - Говерла, її висота 2061 метр над рівнем
               моря
             </div>
           </div>
-
-          <p className="mb-2">
-            Найвища гора в Україні - Говерла. Вона розташована в Українських
-            Карпатах, в мальовничому національному парку "Горгани", на кордоні з
-            Румунією. Висота вершини Говерли становить приблизно 2061 метр над
-            рівнем моря.
-          </p>
         </div>
 
-        <p className="col-start-5 col-end-9 pt-64 pr-10">
+        <p className="col-start-1 col-end-5 pl-10">
+          Найвища гора в Україні - Говерла. Вона розташована в Українських
+          Карпатах, в мальовничому національному парку "Горгани", на кордоні з
+          Румунією. Висота вершини Говерли становить приблизно 2061 метр над
+          рівнем моря.
+        </p>
+
+        <p className="col-start-5 col-end-9 pr-10">
           Говерла є не лише найвищою вершиною України, а й популярним
           туристичним напрямком для любителів гірського туризму та природи.
         </p>
@@ -140,6 +165,15 @@ export const HomePage = () => {
         src={process.env.PUBLIC_URL + "/images/print-b.svg"}
         alt="Hoverla"
         className="w-32 mb-4 mx-auto"
+      />
+
+      <img
+        className={`w-10 rotate-90 fixed right-2 bottom-36 cursor-pointer ${
+          showButton ? "visible" : "hidden"
+        } animate-jump animate-infinite animate-duration-[2000ms] animate-ease-linear`}
+        onClick={scrollToTop}
+        src={process.env.PUBLIC_URL + `/images/arrow-up.svg`}
+        alt="Arrow Up"
       />
     </>
   );

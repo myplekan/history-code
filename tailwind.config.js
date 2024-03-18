@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "header-opacity-50": "rgba(255, 255, 255, 0.5)",
         primary: "rgb(240, 187, 18)",
+        second: "rgb(255, 202, 35)",
         footer: "rgb(233, 236, 239)",
         blue: "rgb(0,122,255)",
       },

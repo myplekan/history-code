@@ -82,9 +82,7 @@ export const HomePage = () => {
         <AnimateImg
           name={"gallery1.png"}
           staticClass={"col-start-1 col-end-5"}
-          animateClass={
-            "animate-fade-right animate-duration-[3000ms] animate-ease-out animate-delay-500"
-          }
+          animateClass={"animate-move-right"}
         />
 
         <div className="col-start-5 col-end-9 pt-14 pr-10">
@@ -130,9 +128,7 @@ export const HomePage = () => {
         <AnimateImg
           name={"gallery2.png"}
           staticClass={"col-start-5 col-end-9 justify-self-end"}
-          animateClass={
-            "animate-fade-left animate-duration-[3000ms] animate-ease-out"
-          }
+          animateClass={"animate-move-left"}
         />
 
         <div className="col-start-1 col-end-5 pl-10 pt-24">

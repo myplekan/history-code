@@ -9,11 +9,11 @@ export const Header = () => {
       <Nav />
 
       <div className="flex gap-2 items-center">
-        <img
+        {/* <img
           width={25}
           src={process.env.PUBLIC_URL + "/images/world.svg"}
           alt="World"
-        />
+        /> */}
         Укр
       </div>
     </header>

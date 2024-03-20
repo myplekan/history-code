@@ -15,7 +15,7 @@ export const AnimateImg: React.FC<Props> = ({
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 0.0,
   });
 
   useEffect(() => {

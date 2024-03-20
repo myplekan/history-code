@@ -16,6 +16,20 @@ module.exports = {
       sans: ["Montserrat", "ui-sans-serif", "system-ui"],
       rutenia: ["Rutenia", "sans-serif"],
     },
+    keyframes: {
+      "move-right": {
+        "0%": { transform: "translateX(-30rem)" },
+        "100%": { transform: "translateX(0)" },
+      },
+      "move-left": {
+        "0%": { transform: "translateX(30rem)" },
+        "100%": { transform: "translateX(0)" },
+      },
+    },
+    animation: {
+      "move-right": "move-right 3s ease-out",
+      "move-left": "move-left 3s ease-out",
+    },
   },
   plugins: [require("tailwindcss-animated")],
 };

@@ -3,34 +3,11 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import { useEffect, useState } from "react";
 import { AnimateImg } from "../components/AnimateImg/AnimateImg";
+import { scrollToTop } from "../services/goTop";
+import { ArrowUp } from "../components/ArrowUp/ArrowUp";
 
 export const HomePage = () => {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <>
       <Banner />
@@ -168,14 +145,7 @@ export const HomePage = () => {
         className="w-32 mb-4 mx-auto"
       />
 
-      <img
-        className={`w-10 rotate-90 fixed right-2 bottom-36 cursor-pointer ${
-          showButton ? "visible" : "hidden"
-        } animate-jump animate-infinite animate-duration-[2000ms] animate-ease-linear`}
-        onClick={scrollToTop}
-        src={process.env.PUBLIC_URL + `/images/arrow-up.svg`}
-        alt="Arrow Up"
-      />
+      <ArrowUp />
     </>
   );
 };

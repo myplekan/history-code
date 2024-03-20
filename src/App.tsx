@@ -4,6 +4,7 @@ import { Header } from "./components/Header/Header";
 import { HomePage } from "./pages/HomePage";
 import { RegionsPage } from "./pages/RegionsPage";
 import { Footer } from "./components/Footer/Footer";
+import { HistoryPage } from "./pages/HistoryPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/regions" element={<RegionsPage />} />
+        <Route path="/history" element={<HistoryPage />} />
       </Routes>
 
       <Footer />

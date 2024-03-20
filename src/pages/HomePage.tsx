@@ -4,18 +4,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { AnimateImg } from "../components/AnimateImg/AnimateImg";
-import { scrollToTop } from "../services/goTop";
 import { ArrowUp } from "../components/ArrowUp/ArrowUp";
 
 export const HomePage = () => {
   return (
-    <>
+    <main>
       <Banner />
 
       <div className="flex flex-col justify-center items-center h-screen text-center text-white pt-11 mb-3">
         <h1 className="flex flex-col font-rutenia my-2.5">
-          <span className="text-6xl">Про</span>
-          <span className="text-9xl">Україну</span>
+          <span className="text-[56px] leading-[56px]">Про</span>
+          <span className="text-[138px] leading-[138px]">Україну</span>
         </h1>
 
         <Link
@@ -25,7 +24,7 @@ export const HomePage = () => {
           Читати більше
         </Link>
 
-        <div className="w-full text-6xl">
+        <div className="w-full text-[58px]">
           <Swiper
             modules={[Autoplay]}
             slidesPerView={1}
@@ -41,10 +40,10 @@ export const HomePage = () => {
       </div>
 
       <div className="grid gap-5 grid-cols-8 text-xl pb-11">
-        <div className="col-start-1 col-end-5 pt-44 pl-10">
+        <div className="col-start-1 col-end-5 pt-[108px] pl-10">
           <h2 className="font-rutenia text-5xl mb-6">Про проєкт</h2>
 
-          <p className="mb-28">
+          <p className="mb-[166px]">
             Основною метою проекту є - розповісти всім бажаючим детальніше про
             Україну, про її давню історію, про багату культуру і дати можливість
             всім охочим детально ознайомитись з кожним регіоном.
@@ -62,7 +61,7 @@ export const HomePage = () => {
           animateClass={"animate-move-right"}
         />
 
-        <div className="col-start-5 col-end-9 pt-14 pr-10">
+        <div className="col-start-5 col-end-9 pt-[80px] pr-10">
           <h2 className="font-rutenia text-5xl mb-6">Дніпро</h2>
 
           <div className="flex gap-4 mb-7">
@@ -70,7 +69,7 @@ export const HomePage = () => {
             <div className="text-2xl">Найбільша річка України</div>
           </div>
 
-          <p className="mb-28">
+          <p className="mb-[160px]">
             Дніпро протікає через центральну та східну частини країни та має
             довжину близько 2201 км, що робить його третьою за довжиною річкою в
             Європі. Дніпро має величезне значення для України як економічно, так
@@ -82,7 +81,7 @@ export const HomePage = () => {
           </p>
         </div>
 
-        <div className="col-start-1 col-end-5 pl-10 pt-16">
+        <div className="col-start-1 col-end-5 pl-10 pt-[70px]">
           <h2 className="font-rutenia text-5xl mb-6">Києво-Печерська Лавра</h2>
 
           <div className="flex gap-4 mb-7">
@@ -146,6 +145,6 @@ export const HomePage = () => {
       />
 
       <ArrowUp />
-    </>
+    </main>
   );
 };

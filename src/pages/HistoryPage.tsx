@@ -3,7 +3,7 @@ import { HistoryCard } from "../components/HistoryCard/HistoryCard";
 
 export const HistoryPage = () => {
   return (
-    <main className="pt-11 px-10">
+    <main className="pt-[58px] px-10">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16">
         <h1 className="font-rutenia text-[52px]">Історія</h1>
         <img src={process.env.PUBLIC_URL + "/images/search.svg"} alt="Search" />

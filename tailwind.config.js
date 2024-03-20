@@ -31,8 +31,8 @@ module.exports = {
       },
     },
     animation: {
-      "move-right": "move-right 3s ease-out",
-      "move-left": "move-left 3s ease-out",
+      "move-right": "move-right 2s ease-out",
+      "move-left": "move-left 2s ease-out",
     },
   },
   plugins: [require("tailwindcss-animated")],

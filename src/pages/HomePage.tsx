@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { useEffect, useState } from "react";
+import { AnimateImg } from "../components/AnimateImg/AnimateImg";
 
 export const HomePage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -78,10 +79,12 @@ export const HomePage = () => {
           className="col-start-5 col-end-9 justify-self-end pr-10"
         />
 
-        <img
-          src={process.env.PUBLIC_URL + "/images/gallery1.png"}
-          alt="Print"
-          className="col-start-1 col-end-5"
+        <AnimateImg
+          name={"gallery1.png"}
+          staticClass={"col-start-1 col-end-5"}
+          animateClass={
+            "animate-fade-right animate-duration-[3000ms] animate-ease-out animate-delay-500"
+          }
         />
 
         <div className="col-start-5 col-end-9 pt-14 pr-10">
@@ -124,10 +127,12 @@ export const HomePage = () => {
           </p>
         </div>
 
-        <img
-          src={process.env.PUBLIC_URL + "/images/gallery2.png"}
-          alt="Print"
-          className="col-start-5 col-end-9 justify-self-end"
+        <AnimateImg
+          name={"gallery2.png"}
+          staticClass={"col-start-5 col-end-9 justify-self-end"}
+          animateClass={
+            "animate-fade-left animate-duration-[3000ms] animate-ease-out"
+          }
         />
 
         <div className="col-start-1 col-end-5 pl-10 pt-24">

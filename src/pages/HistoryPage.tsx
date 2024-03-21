@@ -1,16 +1,16 @@
 import { ArrowUp } from "../components/ArrowUp/ArrowUp";
-import { HistoryCard } from "../components/HistoryCard/HistoryCard";
+import { HistoryCultureCard } from "../components/HistoryCultureCard/HistoryCultureCard";
 
 export const HistoryPage = () => {
   return (
-    <main className="pt-[58px] px-10">
+    <main className="pt-[102px] px-10">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16">
         <h1 className="font-rutenia text-[52px]">Історія</h1>
         <img src={process.env.PUBLIC_URL + "/images/search.svg"} alt="Search" />
       </div>
 
       <div className="flex flex-wrap gap-y-16 justify-between pb-44">
-        <HistoryCard
+        <HistoryCultureCard
           photo={"history1.png"}
           title={"Давньоруський період"}
           year={"(IX-XIII століття)"}
@@ -18,13 +18,13 @@ export const HistoryPage = () => {
             "Формування Київської Русі, розквіт культури та державотворення."
           }
         />
-        <HistoryCard
+        <HistoryCultureCard
           photo={"history2.png"}
           title={"Монгольське нашестя та розпад Русі"}
           year={"(XIII століття)"}
           description={"Занепад Київської Русі після монгольського вторгнення."}
         />
-        <HistoryCard
+        <HistoryCultureCard
           photo={"history3.png"}
           title={"Утворення козацької держави"}
           year={"(XVI - XVI століття)"}
@@ -32,7 +32,7 @@ export const HistoryPage = () => {
             "Виникнення Козацької держави та епоха Запорозького козацтва."
           }
         />
-        <HistoryCard
+        <HistoryCultureCard
           photo={"history4.png"}
           title={"Поділ України"}
           year={"(XVIII століття)"}
@@ -40,7 +40,7 @@ export const HistoryPage = () => {
             "Розподіл України між Австрійською, Російською та Польською імперіями."
           }
         />
-        <HistoryCard
+        <HistoryCultureCard
           photo={"history5.png"}
           title={"Незалежність та радянський період"}
           year={"(1917-1991 рр.)"}
@@ -48,7 +48,7 @@ export const HistoryPage = () => {
             "Утворення УНР, громадянська війна, включення до складу СРСР, після якого настає радянський період"
           }
         />
-        <HistoryCard
+        <HistoryCultureCard
           photo={"history6.png"}
           title={"Сучасна незалежна Україна"}
           year={"(1991-до сьогодні)"}

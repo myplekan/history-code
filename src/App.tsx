@@ -5,6 +5,7 @@ import { HomePage } from "./pages/HomePage";
 import { RegionsPage } from "./pages/RegionsPage";
 import { Footer } from "./components/Footer/Footer";
 import { HistoryPage } from "./pages/HistoryPage";
+import { CulturePage } from "./pages/CulturePage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/regions" element={<RegionsPage />} />
         <Route path="/history" element={<HistoryPage />} />
+        <Route path="/culture" element={<CulturePage />} />
       </Routes>
 
       <Footer />

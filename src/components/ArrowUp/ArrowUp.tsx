@@ -25,9 +25,12 @@ export const ArrowUp = () => {
 
   return (
     <img
-      className={classNames(`w-10 rotate-90 fixed right-[${distance}px] bottom-36 cursor-pointer ${
+      style={{ right: `${distance}px` }}
+      className={classNames(
+        `w-10 rotate-90 fixed bottom-36 cursor-pointer ${
           showButton ? "visible" : "hidden"
-        } animate-jump animate-infinite animate-duration-[2000ms] animate-ease-linear`)}
+        } animate-jump animate-infinite animate-duration-[2000ms] animate-ease-linear`
+      )}
       onClick={scrollToTop}
       src={process.env.PUBLIC_URL + `/images/arrow-up.svg`}
       alt="Arrow Up"

@@ -23,13 +23,19 @@ export const HistoryCultureCard: React.FC<Props> = ({
         alt={photo}
       />
 
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center gap-4">
         <h2 className="text-2xl font-semibold">{title}</h2>
-        <div className="flex gap-6">
-          <Link to="/">
+        <div className="flex gap-4">
+          <Link
+            to="/"
+            className="w-14 h-14 bg-gray-10 rounded-full flex justify-center items-center"
+          >
             <img src={process.env.PUBLIC_URL + "/images/more.svg"} alt="More" />
           </Link>
-          <Link to="/">
+          <Link
+            to="/"
+            className="w-14 h-14 bg-gray-10 rounded-full flex justify-center items-center"
+          >
             <img src={process.env.PUBLIC_URL + "/images/like.svg"} alt="Like" />
           </Link>
         </div>

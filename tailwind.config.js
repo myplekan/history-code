@@ -8,6 +8,7 @@ module.exports = {
         primary: "rgb(240, 187, 18)",
         second: "rgb(255, 202, 35)",
         "gray-40": "rgb(240, 242, 243)",
+        "gray-10": "rgb(244, 246, 247)",
         footer: "rgb(233, 236, 239)",
         blue: "rgb(0,122,255)",
       },

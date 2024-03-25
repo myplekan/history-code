@@ -6,7 +6,6 @@ import classNames from "classnames";
 export const Nav = () => {
   const { pathname } = useLocation();
 
-  console.log(pathname);
   return (
     <nav>
       <ul className="flex gap-16">
@@ -16,7 +15,7 @@ export const Nav = () => {
             className={classNames(
               "hover:text-primary font-medium duration-300",
               {
-                "text-primary": pathname === "/history",
+                "text-primary": pathname.includes("/history"),
               }
             )}
             onClick={scrollToTop}
@@ -30,7 +29,7 @@ export const Nav = () => {
             className={classNames(
               "hover:text-primary font-medium duration-300",
               {
-                "text-primary": pathname === "/culture",
+                "text-primary": pathname.includes("/culture"),
               }
             )}
             onClick={scrollToTop}
@@ -44,7 +43,7 @@ export const Nav = () => {
             className={classNames(
               "hover:text-primary font-medium duration-300",
               {
-                "text-primary": pathname === "/regions",
+                "text-primary": pathname.includes("/regions"),
               }
             )}
             onClick={scrollToTop}

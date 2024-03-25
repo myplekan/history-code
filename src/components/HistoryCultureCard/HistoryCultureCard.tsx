@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { scrollToTop } from "../../services/goTop";
 
 type Props = {
+  name: string;
   photo: string;
   title: string;
   year?: string;
@@ -10,13 +11,14 @@ type Props = {
 };
 
 export const HistoryCultureCard: React.FC<Props> = ({
+  name,
   photo,
   title,
   year,
   description,
 }) => {
   return (
-    <Link to="/" onClick={scrollToTop} className="max-w-620">
+    <Link to={`/culture/${name}`} onClick={scrollToTop} className="max-w-620">
       <img
         className="w-full mb-4 object-center"
         src={process.env.PUBLIC_URL + `/images/${photo}`}

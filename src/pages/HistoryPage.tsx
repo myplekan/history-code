@@ -11,6 +11,7 @@ export const HistoryPage = () => {
 
       <div className="flex flex-wrap gap-y-16 justify-between pb-44">
         <HistoryCultureCard
+          name={'language'}
           photo={"history1.png"}
           title={"Давньоруський період"}
           year={"(IX-XIII століття)"}
@@ -19,12 +20,14 @@ export const HistoryPage = () => {
           }
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"history2.png"}
           title={"Монгольське нашестя та розпад Русі"}
           year={"(XIII століття)"}
           description={"Занепад Київської Русі після монгольського вторгнення."}
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"history3.png"}
           title={"Утворення козацької держави"}
           year={"(XVI - XVI століття)"}
@@ -33,6 +36,7 @@ export const HistoryPage = () => {
           }
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"history4.png"}
           title={"Поділ України"}
           year={"(XVIII століття)"}
@@ -41,6 +45,7 @@ export const HistoryPage = () => {
           }
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"history5.png"}
           title={"Незалежність та радянський період"}
           year={"(1917-1991 рр.)"}
@@ -49,6 +54,7 @@ export const HistoryPage = () => {
           }
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"history6.png"}
           title={"Сучасна незалежна Україна"}
           year={"(1991-до сьогодні)"}

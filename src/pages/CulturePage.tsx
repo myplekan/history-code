@@ -11,6 +11,7 @@ export const CulturePage = () => {
 
       <div className="flex flex-wrap gap-y-16 justify-between pb-44">
         <HistoryCultureCard
+          name={'language'}
           photo={"culture1.png"}
           title={"Мова та література"}
           description={
@@ -18,6 +19,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"culture2.png"}
           title={"Мистецтво"}
           description={
@@ -25,6 +27,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"culture3.png"}
           title={"Музика та танці"}
           description={
@@ -32,6 +35,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"culture4.png"}
           title={"Кулінарія"}
           description={
@@ -39,6 +43,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"culture5.png"}
           title={"Незалежність та радянський період"}
           year={"(1917-1991 рр.)"}
@@ -47,6 +52,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
+          name={'language'}
           photo={"culture6.png"}
           title={"Архітектура та історичні пам'ятки"}
           description={

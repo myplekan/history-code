@@ -1,7 +1,8 @@
-import '../styles/RegionsPage.css';
+import "../styles/RegionsPage.css";
 
 export const RegionsPage = () => {
   return (
+    <main className="pt-[102px] pb-10">
       <svg
         id="Ukraine"
         xmlns="http://www.w3.org/2000/svg"
@@ -401,7 +402,7 @@ export const RegionsPage = () => {
             />
           </pattern>
         </defs>
-        <g id="ukraineMap">
+        <g id="ukraineMap" filter="url(#drop-shadow)">
           <a
             id="SevastopolCity"
             target="_new"
@@ -938,5 +939,6 @@ export const RegionsPage = () => {
           </g>
         </g>
       </svg>
+    </main>
   );
 };

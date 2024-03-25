@@ -2,6 +2,7 @@
   margin: 0 auto;
   height: 100vh;
   fill: #3184ea;
+  filter: drop-shadow(2px 4px 6px #97c2f8);
 }
 
 #KyivCity {
@@ -13,14 +14,14 @@
   stroke: #000;
   stroke-width: 0.5;
   opacity: 1;
-  transition: all 2.8s ease;
+  /* transition: all 2.8s ease; */
 }
 
 .mapBackground:not(:hover) {
   fill: #97c2f8;
 }
 
-@keyframes fillAnimation {
+/* @keyframes fillAnimation {
   from {
     opacity: 0;
   }
@@ -31,7 +32,7 @@
 
 .fillAnimationClass {
   animation: fillAnimation 3s ease;
-}
+} */
 
 .pointerCircle {
   fill: #f00;

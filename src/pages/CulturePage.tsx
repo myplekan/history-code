@@ -5,13 +5,13 @@ export const CulturePage = () => {
   return (
     <main className="pt-[102px] px-10">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16">
-        <h1 className="font-rutenia text-[52px]">Культура</h1>
+        <h1 className="text-[52px] font-medium">Культура</h1>
         <img src={process.env.PUBLIC_URL + "/images/search.svg"} alt="Search" />
       </div>
 
       <div className="flex flex-wrap gap-y-16 justify-between pb-44">
         <HistoryCultureCard
-          name={'language'}
+          name={"language"}
           photo={"culture1.png"}
           title={"Мова та література"}
           description={
@@ -19,7 +19,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
-          name={'language'}
+          name={"language"}
           photo={"culture2.png"}
           title={"Мистецтво"}
           description={
@@ -27,7 +27,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
-          name={'language'}
+          name={"language"}
           photo={"culture3.png"}
           title={"Музика та танці"}
           description={
@@ -35,7 +35,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
-          name={'language'}
+          name={"language"}
           photo={"culture4.png"}
           title={"Кулінарія"}
           description={
@@ -43,7 +43,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
-          name={'language'}
+          name={"language"}
           photo={"culture5.png"}
           title={"Незалежність та радянський період"}
           year={"(1917-1991 рр.)"}
@@ -52,7 +52,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
-          name={'language'}
+          name={"language"}
           photo={"culture6.png"}
           title={"Архітектура та історичні пам'ятки"}
           description={

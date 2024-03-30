@@ -18,9 +18,9 @@ export const HistoryCultureCard: React.FC<Props> = ({
   description,
 }) => {
   return (
-    <Link to={`/culture/${name}`} onClick={scrollToTop} className="max-w-620">
+    <Link to={`/culture/${name}`} onClick={scrollToTop} className="max-w-620 ">
       <img
-        className="w-full mb-4 object-center"
+        className="w-full mb-4 object-center hover:scale-105 direction-300 rounded-3xl"
         src={process.env.PUBLIC_URL + `/images/${photo}`}
         alt={photo}
       />
@@ -33,7 +33,7 @@ export const HistoryCultureCard: React.FC<Props> = ({
             className="w-12 h-12 bg-gray-10 rounded-full flex justify-center items-center hover:bg-primary duration-300"
           >
             <svg
-              className="fill-primary rounded-full hover:fill-white"
+              className="fill-primary rounded-full hover:fill-white border-2 border-primary"
               width="48"
               height="48"
               viewBox="-10 -11 48 48"

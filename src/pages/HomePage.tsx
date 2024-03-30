@@ -57,7 +57,7 @@ export const HomePage = () => {
 
         <AnimateImg
           name={"gallery1.png"}
-          staticClass={"col-start-1 col-end-5"}
+          staticClass={"col-start-1 col-end-5 direction-300 rounded-3xl"}
           animateClass={"animate-move-right"}
         />
 
@@ -103,7 +103,9 @@ export const HomePage = () => {
 
         <AnimateImg
           name={"gallery2.png"}
-          staticClass={"col-start-5 col-end-9 justify-self-end"}
+          staticClass={
+            "col-start-5 col-end-9 justify-self-end direction-300 rounded-3xl"
+          }
           animateClass={"animate-move-left"}
         />
 

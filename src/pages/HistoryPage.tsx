@@ -48,7 +48,7 @@ export const HistoryPage = () => {
           }
         />
         <HistoryCultureCard
-          name={"language"}
+          name={"independence"}
           photo={"history/history5.png"}
           title={"Незалежність та радянський період"}
           year={"(1917-1991 рр.)"}

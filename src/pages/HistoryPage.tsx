@@ -30,7 +30,7 @@ export const HistoryPage = () => {
           description={"Занепад Київської Русі після монгольського вторгнення."}
         />
         <HistoryCultureCard
-          name={"language"}
+          name={"cossack-state"}
           photo={"history/history3.png"}
           title={"Утворення козацької держави"}
           year={"(XVI - XVI століття)"}

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { AnimatePrint } from "../../components/AnimatePrint/AnimatePrint";
 import { ArrowUp } from "../../components/ArrowUp/ArrowUp";
 import { BackArrow } from "../../components/BackArrow/BackArrow";

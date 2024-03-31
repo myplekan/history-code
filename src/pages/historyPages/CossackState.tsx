@@ -1,3 +1,4 @@
+import { AnimateImg } from "../../components/AnimateImg/AnimateImg";
 import { AnimatePrint } from "../../components/AnimatePrint/AnimatePrint";
 import { ArrowUp } from "../../components/ArrowUp/ArrowUp";
 import { BackArrow } from "../../components/BackArrow/BackArrow";
@@ -129,9 +130,10 @@ export const CossackState = () => {
         </div>
 
         <div className="w-6/12 flex flex-col justify-center">
-          <img
-            src={process.env.PUBLIC_URL + "/images/history/cossack1.png"}
-            alt="Sich"
+          <AnimateImg
+            name={"history/cossack1.png"}
+            staticClass={""}
+            animateClass={"animate-move-left"}
           />
         </div>
       </div>

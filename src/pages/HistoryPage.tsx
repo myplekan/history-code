@@ -39,7 +39,7 @@ export const HistoryPage = () => {
           }
         />
         <HistoryCultureCard
-          name={"language"}
+          name={"division"}
           photo={"history/history4.png"}
           title={"Поділ України"}
           year={"(XVIII століття)"}

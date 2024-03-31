@@ -6,7 +6,8 @@ import { RegionsPage } from "./pages/RegionsPage";
 import { Footer } from "./components/Footer/Footer";
 import { HistoryPage } from "./pages/HistoryPage";
 import { CulturePage } from "./pages/CulturePage";
-import { Language } from "./pages/Language";
+import { Language } from "./pages/culturePages/Language";
+import { OldRus } from "./pages/historyPages/OldRus";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/regions" element={<RegionsPage />} />
         <Route path="/history">
           <Route index element={<HistoryPage />} />
+          <Route path="old-rus" element={<OldRus />} />
         </Route>
         <Route path="/culture">
           <Route index element={<CulturePage />} />

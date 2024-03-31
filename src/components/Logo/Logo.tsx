@@ -11,7 +11,7 @@ export const Logo = () => {
   return (
     <Link to="/">
       <img
-        src={process.env.PUBLIC_URL + "/images/logo.svg"}
+        src={process.env.PUBLIC_URL + "/images/svg/logo.svg"}
         alt="Logo"
         onClick={scrollToTop}
       />

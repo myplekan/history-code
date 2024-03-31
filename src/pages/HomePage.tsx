@@ -19,7 +19,7 @@ export const HomePage = () => {
 
         <Link
           to="/"
-          className="flex self-center justify-center items-center bg-primary px-6 py-5 rounded-full mb-9 text-xl font-semibold hover:bg-second duration-300"
+          className="flex self-center justify-center items-center bg-primary px-6 py-5 rounded-full mb-9 font-semibold hover:bg-second duration-300"
         >
           Читати більше
         </Link>
@@ -39,7 +39,7 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div className="grid gap-5 grid-cols-8 text-xl pb-11">
+      <div className="grid gap-5 grid-cols-8 pb-11">
         <div className="col-start-1 col-end-5 pt-[108px] pl-10">
           <h2 className="font-rutenia text-5xl mb-6">Про проєкт</h2>
 
@@ -50,14 +50,14 @@ export const HomePage = () => {
           </p>
         </div>
         <img
-          src={process.env.PUBLIC_URL + "/images/print.svg"}
+          src={process.env.PUBLIC_URL + "/images/svg/print.svg"}
           alt="Print"
           className="col-start-5 col-end-9 justify-self-end pr-10"
         />
 
         <AnimateImg
           name={"gallery1.png"}
-          staticClass={"col-start-1 col-end-5 direction-300 rounded-3xl"}
+          staticClass={"col-start-1 col-end-5"}
           animateClass={"animate-move-right"}
         />
 
@@ -104,7 +104,7 @@ export const HomePage = () => {
         <AnimateImg
           name={"gallery2.png"}
           staticClass={
-            "col-start-5 col-end-9 justify-self-end direction-300 rounded-3xl"
+            "col-start-5 col-end-9 justify-self-end"
           }
           animateClass={"animate-move-left"}
         />
@@ -135,14 +135,14 @@ export const HomePage = () => {
       </div>
 
       <img
-        src={process.env.PUBLIC_URL + "/images/hoverla.png"}
+        src={process.env.PUBLIC_URL + "/images/full/full-hoverla.png"}
         alt="Hoverla"
         className="w-full mb-4"
       />
 
       <img
-        src={process.env.PUBLIC_URL + "/images/print-b.svg"}
-        alt="Hoverla"
+        src={process.env.PUBLIC_URL + "/images/svg/print-b.svg"}
+        alt="print"
         className="w-32 mb-4 mx-auto"
       />
 

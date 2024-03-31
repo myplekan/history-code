@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { scrollToTop } from "../../services/goTop";
 
 type Props = {
@@ -17,8 +17,12 @@ export const HistoryCultureCard: React.FC<Props> = ({
   year,
   description,
 }) => {
+  const location = useLocation();
+  const currentUrl = location.pathname;
+
+  console.log(currentUrl);
   return (
-    <Link to={`/culture/${name}`} onClick={scrollToTop} className="max-w-620 ">
+    <Link to={`${currentUrl}/${name}`} onClick={scrollToTop} className="max-w-620 ">
       <img
         className="w-full mb-4 object-center hover:scale-105 direction-300 rounded-3xl"
         src={process.env.PUBLIC_URL + `/images/${photo}`}
@@ -33,7 +37,7 @@ export const HistoryCultureCard: React.FC<Props> = ({
             className="w-12 h-12 bg-gray-10 rounded-full flex justify-center items-center hover:bg-primary duration-300"
           >
             <svg
-              className="fill-primary rounded-full hover:fill-white border-2 border-primary"
+              className="fill-primary rounded-full hover:fill-white"
               width="48"
               height="48"
               viewBox="-10 -11 48 48"

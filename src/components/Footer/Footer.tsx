@@ -4,7 +4,7 @@ import { Nav } from "../Nav/Nav";
 
 export const Footer = () => {
   return (
-    <footer className="p-10 bg-footer ">
+    <footer className="p-10 bg-footer text-base">
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center gap-16">
           <Logo />

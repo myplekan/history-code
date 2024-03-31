@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { AnimateImg } from "../components/AnimateImg/AnimateImg";
-import { ArrowUp } from "../components/ArrowUp/ArrowUp";
-import { AnimatePrint } from "../components/AnimatePrint/AnimatePrint";
+import { AnimatePrint } from "../../components/AnimatePrint/AnimatePrint";
+import { ArrowUp } from "../../components/ArrowUp/ArrowUp";
+import { AnimateImg } from "../../components/AnimateImg/AnimateImg";
+import { BackArrow } from "../../components/BackArrow/BackArrow";
 
 export const Language = () => {
   return (
@@ -9,22 +10,13 @@ export const Language = () => {
       <div className="h-screen bg-black-opacity-60 mb-6">
         <img
           className="h-screen w-screen absolute -z-10"
-          src={process.env.PUBLIC_URL + "/images/language.png"}
+          src={process.env.PUBLIC_URL + "/images/banners/language.png"}
           alt="Language"
         />
         <div className="flex items-center justify-center h-full text-8xl font-rutenia w-full">
           <h1 className="text-white">Мова та література</h1>
         </div>
-        <Link
-          className="absolute left-[40px] top-[84px] w-14 h-14 inline-flex items-center justify-center rounded-full bg-white"
-          to="/culture"
-        >
-          <img
-            className="w-2.5"
-            src={process.env.PUBLIC_URL + "/images/arrow-left.svg"}
-            alt="Back"
-          />
-        </Link>
+        <BackArrow path="/culture" />
       </div>
 
       <div className="px-10">
@@ -107,7 +99,7 @@ export const Language = () => {
 
       <img
         className="mb-6"
-        src={process.env.PUBLIC_URL + "/images/language1.png"}
+        src={process.env.PUBLIC_URL + "/images/full/full-language.png"}
         alt="Field"
       />
 
@@ -151,44 +143,6 @@ export const Language = () => {
 
       <AnimatePrint />
 
-      {/* <div className="flex mb-10 justify-between -translate-x-[10rem]">
-        <img
-          className="animate-wiggle-more animate-delay-1000 animate-once animate-ease-in-out"
-          src={process.env.PUBLIC_URL + "/images/print2.svg"}
-          alt="print"
-        />
-        <img
-          className="animate-wiggle-more animate-delay-[1250ms] animate-once animate-ease-in-out"
-          src={process.env.PUBLIC_URL + "/images/print1.svg"}
-          alt="print"
-        />
-        <img
-          className="animate-wiggle-more animate-delay-[1500ms] animate-once animate-ease-in-out"
-          src={process.env.PUBLIC_URL + "/images/print2.svg"}
-          alt="print"
-        />
-        <img
-          className="animate-wiggle-more animate-delay-[1750ms] animate-once animate-ease-in-out"
-          src={process.env.PUBLIC_URL + "/images/print1.svg"}
-          alt="print"
-        />
-        <img
-          className="animate-wiggle-more animate-delay-[2000ms] animate-once animate-ease-in-out"
-          src={process.env.PUBLIC_URL + "/images/print2.svg"}
-          alt="print"
-        />
-        <img
-          className="animate-wiggle-more animate-delay-[2250ms] animate-once animate-ease-in-out"
-          src={process.env.PUBLIC_URL + "/images/print1.svg"}
-          alt="print"
-        />
-        <img
-          className="animate-wiggle-more animate-delay-[2500ms] animate-once animate-ease-in-out"
-          src={process.env.PUBLIC_URL + "/images/print2.svg"}
-          alt="print"
-        />
-      </div> */}
-
       <div className="px-10">
         <div className="grid grid-cols-8 gap-5 mb-10">
           <div className="col-start-1 col-end-5">
@@ -209,7 +163,7 @@ export const Language = () => {
         </div>
       </div>
 
-      <div className="grid items-center grid-cols-8 gap-x-5 gap-y-[116px] px-10 text-xl mb-[180px]">
+      <div className="grid items-center grid-cols-8 gap-x-5 gap-y-[116px] px-10 mb-[180px]">
         <div className="col-start-1 col-end-5">
           <h2 className="font-rutenia text-[52px] text-black mb-4">
             Тарас Шевченко
@@ -243,13 +197,13 @@ export const Language = () => {
         </div>
 
         <AnimateImg
-          name={"portret1.png"}
+          name={"/culture/portret1.png"}
           staticClass={"col-start-5 col-end-9 justify-self-end"}
           animateClass={"animate-move-left"}
         />
 
         <AnimateImg
-          name={"portret2.png"}
+          name={"/culture/portret2.png"}
           staticClass={"col-start-1 col-end-5"}
           animateClass={"animate-move-right"}
         />
@@ -313,7 +267,7 @@ export const Language = () => {
         </div>
 
         <AnimateImg
-          name={"portret3.png"}
+          name={"/culture/portret3.png"}
           staticClass={"col-start-5 col-end-9 justify-self-end"}
           animateClass={"animate-move-left"}
         />

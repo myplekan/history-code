@@ -18,7 +18,7 @@ export const Banner = () => {
           {arr.map((slide) => (
             <SwiperSlide key={slide}>
               <img
-                src={process.env.PUBLIC_URL + `/images/${slide}.png`}
+                src={process.env.PUBLIC_URL + `/images/slider/${slide}.png`}
                 alt="Ukraine"
                 className="h-screen w-full object-cover"
               />

@@ -32,7 +32,7 @@ export const ArrowUp = () => {
         } animate-jump animate-infinite animate-duration-[2000ms] animate-ease-linear`
       )}
       onClick={scrollToTop}
-      src={process.env.PUBLIC_URL + `/images/arrow-up.svg`}
+      src={process.env.PUBLIC_URL + `/images/svg/arrow-up.svg`}
       alt="Arrow Up"
     />
   );

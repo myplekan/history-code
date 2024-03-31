@@ -8,7 +8,7 @@ export const Nav = () => {
 
   return (
     <nav>
-      <ul className="flex gap-16">
+      <ul className="flex gap-16 text-base">
         <li>
           <NavLink
             to="/history"

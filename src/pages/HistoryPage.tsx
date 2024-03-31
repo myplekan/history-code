@@ -6,7 +6,10 @@ export const HistoryPage = () => {
     <main className="pt-[102px] px-10">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16">
         <h1 className="text-[52px] font-medium">Історія</h1>
-        <img src={process.env.PUBLIC_URL + "/images/svg/search.svg"} alt="Search" />
+        <img
+          src={process.env.PUBLIC_URL + "/images/svg/search.svg"}
+          alt="Search"
+        />
       </div>
 
       <div className="flex flex-wrap gap-y-16 justify-between pb-44">
@@ -20,7 +23,7 @@ export const HistoryPage = () => {
           }
         />
         <HistoryCultureCard
-          name={"language"}
+          name={"mongol-invasion"}
           photo={"history/history2.png"}
           title={"Монгольське нашестя та розпад Русі"}
           year={"(XIII століття)"}

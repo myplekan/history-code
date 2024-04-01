@@ -21,7 +21,6 @@ export const HistoryCultureCard: React.FC<Props> = ({
   const location = useLocation();
   const currentUrl = location.pathname;
 
-  console.log(currentUrl);
   return (
     <Link to={`${currentUrl}/${name}`} onClick={scrollToTop} className="max-w-620 ">
       <img

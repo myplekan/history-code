@@ -23,11 +23,13 @@ export const CossackState = () => {
         <BackArrow path="/history" />
       </div>
 
-      <div className="flex gap-x-16 px-10 mb-8">
-        <div className="flex w-6/12 flex-col gap-8">
-          <h2 className="font-rutenia text-[52px]">Початок козацького руху</h2>
+      <div className="flex gap-x-16 px-10 mb-16">
+        <div className="flex w-6/12 flex-col">
+          <h2 className="font-rutenia text-[52px] mb-4">
+            Початок козацького руху
+          </h2>
 
-          <div className="flex items-center gap-4 text-2xl">
+          <div className="flex items-center gap-4 text-2xl mb-8">
             <img
               width={33}
               className="inline-flex"
@@ -40,7 +42,7 @@ export const CossackState = () => {
             </span>
           </div>
 
-          <div>
+          <div className="mb-8">
             <p>
               У другій половині XVI століття на території Запорізької Січі, що
               знаходилася на південному заході сучасної України, почав
@@ -92,10 +94,10 @@ export const CossackState = () => {
       <AnimatePrint />
 
       <div className="flex gap-x-16 px-10 mb-[136px]">
-        <div className="flex w-6/12 flex-col gap-8">
-          <h2 className="font-rutenia text-[52px]">Запорозька Січ</h2>
+        <div className="flex w-6/12 flex-col">
+          <h2 className="font-rutenia text-[52px] mb-4">Запорозька Січ</h2>
 
-          <div className="flex items-center gap-4 text-2xl">
+          <div className="flex items-center gap-4 text-2xl mb-8">
             <img
               width={33}
               className="inline-flex"
@@ -139,10 +141,10 @@ export const CossackState = () => {
       </div>
 
       <div className="flex gap-x-16 px-10 mb-16">
-        <div className="flex w-6/12 flex-col gap-8">
-          <h2 className="font-rutenia text-[52px]">Гетьманщина</h2>
+        <div className="flex w-6/12 flex-col">
+          <h2 className="font-rutenia text-[52px] mb-4">Гетьманщина</h2>
 
-          <div className="flex items-center gap-4 text-2xl">
+          <div className="flex items-center gap-4 text-2xl mb-8">
             <img
               width={33}
               className="inline-flex"

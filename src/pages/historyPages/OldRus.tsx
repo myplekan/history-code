@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { AnimatePrint } from "../../components/AnimatePrint/AnimatePrint";
 import { ArrowUp } from "../../components/ArrowUp/ArrowUp";
 import { BackArrow } from "../../components/BackArrow/BackArrow";
@@ -25,7 +24,7 @@ export const OldRus = () => {
 
       <div className="flex gap-x-16 px-10 mb-16">
         <div className="w-6/12">
-          <h2 className="font-rutenia text-[52px] mb-6">Русь</h2>
+          <h2 className="font-rutenia text-[52px] mb-4">Формування Русі</h2>
 
           <div className="flex items-center gap-4 text-2xl mb-8">
             <img

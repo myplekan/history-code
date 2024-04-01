@@ -23,10 +23,12 @@ export const Division = () => {
       </div>
 
       <div className="flex gap-x-16 px-10 mb-8">
-        <div className="flex w-6/12 flex-col gap-8">
-          <h2 className="font-rutenia text-[52px]">Поділ Українських земель</h2>
+        <div className="flex w-6/12 flex-col">
+          <h2 className="font-rutenia text-[52px] mb-4">
+            Поділ Українських земель
+          </h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-4">
+          <div className="flex items-center gap-4 text-2xl mb-8">
             <img
               width={33}
               className="inline-flex"
@@ -39,14 +41,14 @@ export const Division = () => {
             </span>
           </div>
 
-          <div>
+          <div className="mb-8">
             <p>
               У другій половині <strong>XVIII ст.</strong> Польща переживала
               період занепаду. Феодально-кріпосницький лад, феодальні чвари,
               міжусобиці гальмували розвиток господарства країни. Ослабленням
               Польщі скористалися сусідні Пруссія та Австрія. Вони виношували
               плани роздробити Польщу, прагнули розширити свої володіння за
-              рахунок її території. До Пруссії та Австрії приєдналася Росія. .
+              рахунок її території. До Пруссії та Австрії приєдналася Росія.
             </p>
           </div>
 

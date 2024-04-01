@@ -57,7 +57,7 @@ export const HistoryPage = () => {
           }
         />
         <HistoryCultureCard
-          name={"language"}
+          name={"modern-independence"}
           photo={"history/history6.png"}
           title={"Сучасна незалежна Україна"}
           year={"(1991-до сьогодні)"}

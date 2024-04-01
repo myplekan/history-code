@@ -12,6 +12,7 @@ import { MongolInvasion } from "./pages/historyPages/MongolInvasion";
 import { CossackState } from "./pages/historyPages/CossackState";
 import { Division } from "./pages/historyPages/Division";
 import { Independence } from "./pages/historyPages/Independence";
+import { ModernIndependence } from "./pages/historyPages/ModernIndependence";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="cossack-state" element={<CossackState />} />
           <Route path="division" element={<Division />} />
           <Route path="independence" element={<Independence />} />
+          <Route path="modern-independence" element={<ModernIndependence />} />
         </Route>
         <Route path="/culture">
           <Route index element={<CulturePage />} />

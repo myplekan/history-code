@@ -22,9 +22,7 @@ export const HistoryCultureCard: React.FC<Props> = ({
   const currentUrl = location.pathname;
 
   return (
-    <Link
-      to={`${currentUrl}/${name}`}
-      onClick={scrollToTop}
+    <div
       className="grow basis-50"
     >
       <img
@@ -34,7 +32,12 @@ export const HistoryCultureCard: React.FC<Props> = ({
       />
 
       <div className="flex justify-between items-center gap-4">
-        <h2 className="text-2xl font-semibold">{title}</h2>
+        <Link to={`${currentUrl}/${name}`} onClick={scrollToTop}>
+          <h2 className="text-2xl font-semibold hover:text-primary duration-300">
+            {title}
+          </h2>
+        </Link>
+
         <div className="flex gap-4">
           <MoreAndLike />
         </div>
@@ -42,6 +45,6 @@ export const HistoryCultureCard: React.FC<Props> = ({
 
       {year && <span>{year}</span>}
       <div className="pt-2">{description}</div>
-    </Link>
+    </div>
   );
 };

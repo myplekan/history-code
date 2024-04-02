@@ -39,11 +39,11 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div className="grid gap-5 grid-cols-8 pb-11">
+      <div className="grid gap-x-5 grid-cols-8 pb-11">
         <div className="col-start-1 col-end-5 pt-[108px] pl-10">
-          <h2 className="font-rutenia text-5xl mb-6">Про проєкт</h2>
+          <h2 className="font-rutenia text-5xl mb-4">Про проєкт</h2>
 
-          <p className="mb-[166px]">
+          <p className="mb-[230px]">
             Основною метою проекту є - розповісти всім бажаючим детальніше про
             Україну, про її давню історію, про багату культуру і дати можливість
             всім охочим детально ознайомитись з кожним регіоном.
@@ -62,11 +62,16 @@ export const HomePage = () => {
         />
 
         <div className="col-start-5 col-end-9 pt-[80px] pr-10">
-          <h2 className="font-rutenia text-5xl mb-6">Дніпро</h2>
+          <h2 className="font-rutenia text-5xl mb-4">Дніпро</h2>
 
-          <div className="flex gap-4 mb-7">
-            <div className="bg-primary max-h-full w-1 "></div>
-            <div className="text-2xl">Найбільша річка України</div>
+          <div className="flex items-center gap-4 text-2xl mb-8">
+            <img
+              width={33}
+              className="inline-flex"
+              src={process.env.PUBLIC_URL + "/images/svg/pattern.svg"}
+              alt="Pattern"
+            />
+            <span>Найбільша річка України</span>
           </div>
 
           <p className="mb-[160px]">
@@ -82,13 +87,16 @@ export const HomePage = () => {
         </div>
 
         <div className="col-start-1 col-end-5 pl-10 pt-[70px]">
-          <h2 className="font-rutenia text-5xl mb-6">Києво-Печерська Лавра</h2>
+          <h2 className="font-rutenia text-5xl mb-4">Києво-Печерська Лавра</h2>
 
-          <div className="flex gap-4 mb-7">
-            <div className="bg-primary max-h-full w-1 "></div>
-            <div className="text-2xl">
-              Одна з найбільш визначник культурних пам’яток України
-            </div>
+          <div className="flex items-center gap-4 text-2xl mb-7">
+            <img
+              width={33}
+              className="inline-flex"
+              src={process.env.PUBLIC_URL + "/images/svg/pattern.svg"}
+              alt="Pattern"
+            />
+            <span>Одна з найбільш визначник культурних пам’яток України</span>
           </div>
 
           <p className="mb-28">
@@ -103,21 +111,24 @@ export const HomePage = () => {
 
         <AnimateImg
           name={"gallery2.png"}
-          staticClass={
-            "col-start-5 col-end-9 justify-self-end"
-          }
+          staticClass={"col-start-5 col-end-9 justify-self-end"}
           animateClass={"animate-move-left"}
         />
 
         <div className="col-start-1 col-end-5 pl-10 pt-24">
-          <h2 className="font-rutenia text-5xl mb-6">Говерла</h2>
+          <h2 className="font-rutenia text-5xl mb-4">Говерла</h2>
 
-          <div className="flex gap-4 mb-4">
-            <div className="bg-primary max-h-full w-1 "></div>
-            <div className="text-2xl">
+          <div className="flex items-center gap-4 text-2xl mb-7">
+            <img
+              width={33}
+              className="inline-flex"
+              src={process.env.PUBLIC_URL + "/images/svg/pattern.svg"}
+              alt="Pattern"
+            />
+            <span>
               Найвища гора в Україні - Говерла, її висота 2061 метр над рівнем
               моря
-            </div>
+            </span>
           </div>
         </div>
 

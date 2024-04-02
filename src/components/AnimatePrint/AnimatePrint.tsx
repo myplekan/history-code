@@ -20,9 +20,7 @@ export const AnimatePrint = () => {
       <img
         ref={ref}
         className={`${
-          isVisible
-            ? "animate-wiggle-more animate-delay-[0000ms] animate-once animate-ease-in-out"
-            : ""
+          isVisible ? "animate-jump animate-once animate-duration-[2000ms]" : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print2.svg"}
         alt="print"
@@ -31,7 +29,7 @@ export const AnimatePrint = () => {
         ref={ref}
         className={`${
           isVisible
-            ? "animate-wiggle-more animate-delay-[0250ms] animate-once animate-ease-in-out"
+            ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-1000"
             : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print1.svg"}
@@ -40,9 +38,7 @@ export const AnimatePrint = () => {
       <img
         ref={ref}
         className={`${
-          isVisible
-            ? "animate-wiggle-more animate-delay-[0500ms] animate-once animate-ease-in-out"
-            : ""
+          isVisible ? "animate-jump animate-once animate-duration-[2000ms]" : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print2.svg"}
         alt="print"
@@ -51,7 +47,7 @@ export const AnimatePrint = () => {
         ref={ref}
         className={`${
           isVisible
-            ? "animate-wiggle-more animate-delay-[0750ms] animate-once animate-ease-in-out"
+            ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-1000"
             : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print1.svg"}
@@ -60,9 +56,7 @@ export const AnimatePrint = () => {
       <img
         ref={ref}
         className={`${
-          isVisible
-            ? "animate-wiggle-more animate-delay-[1000ms] animate-once animate-ease-in-out"
-            : ""
+          isVisible ? "animate-jump animate-once animate-duration-[2000ms]" : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print2.svg"}
         alt="print"
@@ -71,7 +65,7 @@ export const AnimatePrint = () => {
         ref={ref}
         className={`${
           isVisible
-            ? "animate-wiggle-more animate-delay-[1250ms] animate-once animate-ease-in-out"
+            ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-1000"
             : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print1.svg"}
@@ -80,9 +74,7 @@ export const AnimatePrint = () => {
       <img
         ref={ref}
         className={`${
-          isVisible
-            ? "animate-wiggle-more animate-delay-[1500ms] animate-once animate-ease-in-out"
-            : ""
+          isVisible ? "animate-jump animate-once animate-duration-[2000ms]" : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print2.svg"}
         alt="print"

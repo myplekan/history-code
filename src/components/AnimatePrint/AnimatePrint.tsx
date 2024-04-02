@@ -29,7 +29,7 @@ export const AnimatePrint = () => {
         ref={ref}
         className={`${
           isVisible
-            ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-1000"
+            ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-[250ms]"
             : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print1.svg"}
@@ -38,7 +38,7 @@ export const AnimatePrint = () => {
       <img
         ref={ref}
         className={`${
-          isVisible ? "animate-jump animate-once animate-duration-[2000ms]" : ""
+          isVisible ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-[500ms]" : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print2.svg"}
         alt="print"
@@ -47,7 +47,7 @@ export const AnimatePrint = () => {
         ref={ref}
         className={`${
           isVisible
-            ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-1000"
+            ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-[750ms]"
             : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print1.svg"}
@@ -56,7 +56,7 @@ export const AnimatePrint = () => {
       <img
         ref={ref}
         className={`${
-          isVisible ? "animate-jump animate-once animate-duration-[2000ms]" : ""
+          isVisible ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-[1000ms]" : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print2.svg"}
         alt="print"
@@ -65,7 +65,7 @@ export const AnimatePrint = () => {
         ref={ref}
         className={`${
           isVisible
-            ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-1000"
+            ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-[1250ms]"
             : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print1.svg"}
@@ -74,7 +74,7 @@ export const AnimatePrint = () => {
       <img
         ref={ref}
         className={`${
-          isVisible ? "animate-jump animate-once animate-duration-[2000ms]" : ""
+          isVisible ? "animate-jump animate-once animate-duration-[2000ms] animate-delay-[1550ms]" : ""
         }`}
         src={process.env.PUBLIC_URL + "/images/svg/print2.svg"}
         alt="print"

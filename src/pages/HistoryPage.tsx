@@ -12,7 +12,7 @@ export const HistoryPage = () => {
         />
       </div>
 
-      <div className="flex flex-wrap gap-y-16 justify-between pb-44">
+      <div className="flex flex-wrap gap-16 justify-between pb-44">
         <HistoryCultureCard
           name={"old-rus"}
           photo={"history/history1.png"}
@@ -27,7 +27,9 @@ export const HistoryPage = () => {
           photo={"history/history2.png"}
           title={"Монгольське нашестя та розпад Русі"}
           year={"(XIII століття)"}
-          description={"Занепад Київської Русі після монгольського вторгнення."}
+          description={
+            "Занепад та розпад Київської Русі після монгольського вторгнення."
+          }
         />
         <HistoryCultureCard
           name={"cossack-state"}

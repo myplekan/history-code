@@ -6,10 +6,13 @@ export const CulturePage = () => {
     <main className="pt-[102px] px-10">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16">
         <h1 className="text-[52px] font-medium">Культура</h1>
-        <img src={process.env.PUBLIC_URL + "/images/svg/search.svg"} alt="Search" />
+        <img
+          src={process.env.PUBLIC_URL + "/images/svg/search.svg"}
+          alt="Search"
+        />
       </div>
 
-      <div className="flex flex-wrap gap-y-16 justify-between pb-44">
+      <div className="flex flex-wrap gap-16 justify-between pb-44">
         <HistoryCultureCard
           name={"language"}
           photo={"culture/culture1.png"}

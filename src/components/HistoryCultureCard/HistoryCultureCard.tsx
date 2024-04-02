@@ -22,7 +22,11 @@ export const HistoryCultureCard: React.FC<Props> = ({
   const currentUrl = location.pathname;
 
   return (
-    <Link to={`${currentUrl}/${name}`} onClick={scrollToTop} className="max-w-620 ">
+    <Link
+      to={`${currentUrl}/${name}`}
+      onClick={scrollToTop}
+      className="grow basis-50"
+    >
       <img
         className="w-full mb-4 object-center hover:scale-105 direction-300 rounded-3xl"
         src={process.env.PUBLIC_URL + `/images/${photo}`}

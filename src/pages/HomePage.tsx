@@ -11,7 +11,7 @@ export const HomePage = () => {
     <main>
       <Banner />
 
-      <div className="flex flex-col justify-center items-center h-screen text-center text-white pt-11 mb-3">
+      <div className="flex flex-col justify-center items-center h-screen text-center text-white pt-11">
         <h1 className="flex flex-col font-rutenia my-2.5">
           <span className="text-[56px] leading-[56px]">Про</span>
           <span className="text-[138px] leading-[138px]">Україну</span>
@@ -39,11 +39,11 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div className="grid gap-x-5 grid-cols-8 pb-11">
-        <div className="col-start-1 col-end-5 pt-[108px] pl-10">
+      <div className="grid gap-x-5 gap-y-24 grid-cols-8 pb-16 items-center">
+        <div className="col-start-1 col-end-5 flex flex-col justify-center pl-10">
           <h2 className="font-rutenia text-5xl mb-4">Про проєкт</h2>
 
-          <p className="mb-[230px]">
+          <p>
             Основною метою проекту є - розповісти всім бажаючим детальніше про
             Україну, про її давню історію, про багату культуру і дати можливість
             всім охочим детально ознайомитись з кожним регіоном.
@@ -61,7 +61,7 @@ export const HomePage = () => {
           animateClass={"animate-move-right"}
         />
 
-        <div className="col-start-5 col-end-9 pt-[80px] pr-10">
+        <div className="col-start-5 col-end-9 pr-10">
           <h2 className="font-rutenia text-5xl mb-4">Дніпро</h2>
 
           <div className="flex items-center gap-4 text-2xl mb-8">
@@ -74,7 +74,7 @@ export const HomePage = () => {
             <span>Найбільша річка України</span>
           </div>
 
-          <p className="mb-[160px]">
+          <p>
             Дніпро протікає через центральну та східну частини країни та має
             довжину близько 2201 км, що робить його третьою за довжиною річкою в
             Європі. Дніпро має величезне значення для України як економічно, так
@@ -86,7 +86,7 @@ export const HomePage = () => {
           </p>
         </div>
 
-        <div className="col-start-1 col-end-5 pl-10 pt-[70px]">
+        <div className="col-start-1 col-end-5 pl-10">
           <h2 className="font-rutenia text-5xl mb-4">Києво-Печерська Лавра</h2>
 
           <div className="flex items-center gap-4 text-2xl mb-7">
@@ -99,7 +99,7 @@ export const HomePage = () => {
             <span>Одна з найбільш визначник культурних пам’яток України</span>
           </div>
 
-          <p className="mb-28">
+          <p>
             Однією з найбільш визначних є Києво-Печерська Лавра, яка знаходиться
             у Києві. Це один з найстаріших монастирів у східній Європі,
             заснований у XI столітті. Лавра є не лише релігійним, але й
@@ -115,7 +115,7 @@ export const HomePage = () => {
           animateClass={"animate-move-left"}
         />
 
-        <div className="col-start-1 col-end-5 pl-10 pt-24">
+        <div className="col-start-1 col-end-5 pl-10">
           <h2 className="font-rutenia text-5xl mb-4">Говерла</h2>
 
           <div className="flex items-center gap-4 text-2xl mb-7">
@@ -130,16 +130,16 @@ export const HomePage = () => {
               моря
             </span>
           </div>
+
+          <p className="col-start-1 col-end-5">
+            Найвища гора в Україні - Говерла. Вона розташована в Українських
+            Карпатах, в мальовничому національному парку "Горгани", на кордоні з
+            Румунією. Висота вершини Говерли становить приблизно 2061 метр над
+            рівнем моря.
+          </p>
         </div>
 
-        <p className="col-start-1 col-end-5 pl-10">
-          Найвища гора в Україні - Говерла. Вона розташована в Українських
-          Карпатах, в мальовничому національному парку "Горгани", на кордоні з
-          Румунією. Висота вершини Говерли становить приблизно 2061 метр над
-          рівнем моря.
-        </p>
-
-        <p className="col-start-5 col-end-9 pr-10">
+        <p className="col-start-5 col-end-9 pr-10 self-end">
           Говерла є не лише найвищою вершиною України, а й популярним
           туристичним напрямком для любителів гірського туризму та природи.
         </p>
@@ -148,13 +148,13 @@ export const HomePage = () => {
       <img
         src={process.env.PUBLIC_URL + "/images/full/full-hoverla.png"}
         alt="Hoverla"
-        className="w-full mb-4"
+        className="w-full mb-12"
       />
 
       <img
         src={process.env.PUBLIC_URL + "/images/svg/print-b.svg"}
         alt="print"
-        className="w-32 mb-4 mx-auto"
+        className="w-32 mb-12 mx-auto"
       />
 
       <ArrowUp />

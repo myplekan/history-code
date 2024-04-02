@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,tsx}"],
   theme: {
     extend: {
+      flexBasis: {
+        50: "calc(50% - 64px)",
+      },
       colors: {
         "header-opacity-50": "rgba(255, 255, 255, 0.5)",
         "black-opacity-60": "rgba(28, 27, 26, 0.6)",
@@ -17,7 +20,7 @@ module.exports = {
       },
       height: {},
       maxWidth: {
-        620: "38.75rem",
+        650: "40.625rem",
       },
     },
     fontFamily: {

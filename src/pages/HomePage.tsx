@@ -40,10 +40,10 @@ export const HomePage = () => {
       </div>
 
       <div className="grid gap-x-5 gap-y-24 grid-cols-8 pb-16 items-center">
-        <div className="col-start-1 col-end-5 flex flex-col justify-center pl-10">
+        <div className="col-start-1 col-end-5 flex flex-col justify-center pl-10 text-gray-100">
           <h2 className="font-rutenia text-5xl mb-4">Про проєкт</h2>
 
-          <p>
+          <p className="max-w-[650px]">
             Основною метою проекту є - розповісти всім бажаючим детальніше про
             Україну, про її давню історію, про багату культуру і дати можливість
             всім охочим детально ознайомитись з кожним регіоном.
@@ -64,7 +64,7 @@ export const HomePage = () => {
         <div className="col-start-5 col-end-9 pr-10">
           <h2 className="font-rutenia text-5xl mb-4">Дніпро</h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"
@@ -89,7 +89,7 @@ export const HomePage = () => {
         <div className="col-start-1 col-end-5 pl-10">
           <h2 className="font-rutenia text-5xl mb-4">Києво-Печерська Лавра</h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-7">
+          <div className="flex items-center gap-4 text-2xl mb-7 text-gray-100">
             <img
               width={33}
               className="inline-flex"

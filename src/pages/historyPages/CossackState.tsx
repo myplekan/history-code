@@ -29,7 +29,7 @@ export const CossackState = () => {
             Початок козацького руху
           </h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"
@@ -97,7 +97,7 @@ export const CossackState = () => {
         <div className="flex w-6/12 flex-col">
           <h2 className="font-rutenia text-[52px] mb-4">Запорозька Січ</h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"
@@ -144,7 +144,7 @@ export const CossackState = () => {
         <div className="flex w-6/12 flex-col">
           <h2 className="font-rutenia text-[52px] mb-4">Гетьманщина</h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"

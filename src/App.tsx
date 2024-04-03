@@ -36,7 +36,7 @@ function App() {
     <div className="App overflow-y-hidden">
       <Header />
 
-      {loading ? (
+      {!loading ? (
         <Loader />
       ) : (
         <Routes>

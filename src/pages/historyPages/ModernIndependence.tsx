@@ -31,7 +31,7 @@ export const ModernIndependence = () => {
             Живий ланцюг єдності
           </h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"
@@ -91,7 +91,7 @@ export const ModernIndependence = () => {
             Проголошення незалежності України
           </h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"
@@ -130,7 +130,7 @@ export const ModernIndependence = () => {
         <div className="flex w-6/12 flex-col">
           <h2 className="font-rutenia text-[52px] mb-4">Біловезька угода</h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"
@@ -184,7 +184,7 @@ export const ModernIndependence = () => {
             Ухвалення конституції України
           </h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"
@@ -227,7 +227,7 @@ export const ModernIndependence = () => {
         <div className="flex w-6/12 flex-col">
           <h2 className="font-rutenia text-[52px] mb-4">Революція гідності</h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"
@@ -299,7 +299,7 @@ export const ModernIndependence = () => {
             Війна Росії проти України
           </h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"

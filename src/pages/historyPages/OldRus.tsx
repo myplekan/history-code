@@ -26,14 +26,14 @@ export const OldRus = () => {
         <div className="w-6/12">
           <h2 className="font-rutenia text-[52px] mb-4">Формування Русі</h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"
               src={process.env.PUBLIC_URL + "/images/svg/pattern.svg"}
               alt="Pattern"
             />
-            <span>
+            <span className="max-w-[500px]">
               Ще однією важливою подією було хрещення Русі у 988 році.
             </span>
           </div>
@@ -89,7 +89,7 @@ export const OldRus = () => {
 
       <div className="px-10 flex gap-x-16 mb-16">
         <div className="flex flex-col gap-8">
-          <div className="flex items-center gap-4 text-2xl">
+          <div className="flex items-center gap-4 text-2xl text-gray-100">
             <img
               width={33}
               src={process.env.PUBLIC_URL + "/images/svg/pattern.svg"}

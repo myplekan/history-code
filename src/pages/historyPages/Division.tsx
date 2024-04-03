@@ -28,7 +28,7 @@ export const Division = () => {
             Поділ Українських земель
           </h2>
 
-          <div className="flex items-center gap-4 text-2xl mb-8">
+          <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img
               width={33}
               className="inline-flex"

@@ -9,7 +9,7 @@ export const Language = () => {
     <main>
       <div className="h-screen bg-black-opacity-60 mb-20">
         <img
-          className="h-screen w-screen absolute -z-10"
+          className="h-screen w-screen absolute -z-10 object-cover"
           src={process.env.PUBLIC_URL + "/images/banners/language.png"}
           alt="Language"
         />

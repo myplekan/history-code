@@ -11,7 +11,7 @@ export const Cooking = () => {
         <img
           className="h-screen w-screen absolute -z-10"
           src={process.env.PUBLIC_URL + "/images/banners/musicAndDancing.png"}
-          alt="Music And Dancing"
+          alt="Cooking"
         />
         <div className="flex items-center justify-center h-full text-8xl font-rutenia w-full">
           <h1 className="text-white">Кулінарія</h1>

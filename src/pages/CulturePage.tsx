@@ -54,7 +54,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
-          name={"language"}
+          name={"modern-culture"}
           photo={"culture/culture6.png"}
           title={"Сучасна культура"}
           description={

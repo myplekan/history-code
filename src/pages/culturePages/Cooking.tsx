@@ -10,7 +10,7 @@ export const Cooking = () => {
       <div className="h-screen bg-black-opacity-60 mb-20">
         <img
           className="h-screen w-screen absolute -z-10"
-          src={process.env.PUBLIC_URL + "/images/banners/musicAndDancing.png"}
+          src={process.env.PUBLIC_URL + "/images/banners/cooking.png"}
           alt="Cooking"
         />
         <div className="flex items-center justify-center h-full text-8xl font-rutenia w-full">

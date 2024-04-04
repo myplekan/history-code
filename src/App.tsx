@@ -17,6 +17,7 @@ import { Loader } from "./components/Loader/Loader";
 import { useState } from "react";
 import { Art } from "./pages/culturePages/Art";
 import { MusicAndDancing } from "./pages/culturePages/MusicAndDancing";
+import { Cooking } from "./pages/culturePages/Cooking";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -61,6 +62,7 @@ function App() {
             <Route path="language" element={<Language />} />
             <Route path="art" element={<Art />} />
             <Route path="music-and-dancing" element={<MusicAndDancing />} />
+            <Route path="cooking" element={<Cooking />} />
           </Route>
         </Routes>
       )}

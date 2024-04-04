@@ -16,6 +16,7 @@ import { ModernIndependence } from "./pages/historyPages/ModernIndependence";
 import { Loader } from "./components/Loader/Loader";
 import { useState } from "react";
 import { Art } from "./pages/culturePages/Art";
+import { MusicAndDancing } from "./pages/culturePages/MusicAndDancing";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -59,6 +60,7 @@ function App() {
             <Route index element={<CulturePage />} />
             <Route path="language" element={<Language />} />
             <Route path="art" element={<Art />} />
+            <Route path="music-and-dancing" element={<MusicAndDancing />} />
           </Route>
         </Routes>
       )}

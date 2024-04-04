@@ -30,7 +30,7 @@ export const CulturePage = () => {
           }
         />
         <HistoryCultureCard
-          name={"language"}
+          name={"music-and-dancing"}
           photo={"culture/culture3.png"}
           title={"Музика та танці"}
           description={

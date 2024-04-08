@@ -1,6 +1,4 @@
 #Ukraine {
-  margin: 0 auto;
-  height: 100vh;
   fill: #3184ea;
   filter: drop-shadow(2px 4px 6px #97c2f8);
 }
@@ -10,28 +8,14 @@
 }
 
 .mapBackground {
-  /* fill: #74b2ff; */
-  stroke: #000;
-  stroke-width: 0.5;
-  opacity: 1;
-  /* transition: all 2.8s ease; */
-}
-
-.mapBackground:not(:hover) {
   fill: #97c2f8;
+  stroke: #3184ea;
+  stroke-width: 1;
+  opacity: 1;
 }
 
-/* @keyframes fillAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fillAnimationClass {
-  animation: fillAnimation 3s ease;
+/* .mapBackground:not(:hover) {
+  fill: #97c2f8;
 } */
 
 .pointerCircle {
@@ -44,12 +28,13 @@
   transition: all 0.3s ease;
   pointer-events: none;
 
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-size: 14px;
+  fill: #fff;
+  /* font-weight: bold;
   font-size: 0.7em;
   fill: #000;
   text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0,
-    white 1px -1px;
+    white 1px -1px; */
 }
 
 #Kiev:hover ~ .cityKiev,

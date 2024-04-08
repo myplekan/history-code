@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/history-code/static/css/main.42819890.css",
-    "main.js": "/history-code/static/js/main.3ab41b59.js",
+    "main.css": "/history-code/static/css/main.69cd043a.css",
+    "main.js": "/history-code/static/js/main.ce3ad02d.js",
     "static/media/Rutenia2008VasylChebanyk.woff2": "/history-code/static/media/Rutenia2008VasylChebanyk.012aee0483004483ec9d.woff2",
     "index.html": "/history-code/index.html",
-    "main.42819890.css.map": "/history-code/static/css/main.42819890.css.map",
-    "main.3ab41b59.js.map": "/history-code/static/js/main.3ab41b59.js.map"
+    "main.69cd043a.css.map": "/history-code/static/css/main.69cd043a.css.map",
+    "main.ce3ad02d.js.map": "/history-code/static/js/main.ce3ad02d.js.map"
   },
   "entrypoints": [
-    "static/css/main.42819890.css",
-    "static/js/main.3ab41b59.js"
+    "static/css/main.69cd043a.css",
+    "static/js/main.ce3ad02d.js"
   ]
 }

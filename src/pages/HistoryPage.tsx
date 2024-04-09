@@ -5,7 +5,7 @@ export const HistoryPage = () => {
   return (
     <main className="pt-[102px] px-10">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16">
-        <h1 className="text-[52px] font-medium">Історія</h1>
+        <h1 className="text-[52px] font-medium text-gray-100">Історія</h1>
         <img
           src={process.env.PUBLIC_URL + "/images/svg/search.svg"}
           alt="Search"

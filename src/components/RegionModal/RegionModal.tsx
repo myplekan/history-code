@@ -72,7 +72,7 @@ export const RegionModal: React.FC<Props> = ({ regionName, setRegion }) => {
               <span>
                 Населення - <strong>{people}</strong>
               </span>
-              <Link to={wikipedia} target="_new" className="text-primary">
+              <Link to={wikipedia} target="_new" className="text-second hover:text-primary duration-300">
                 <strong>Вікіпедія</strong>
               </Link>
             </div>

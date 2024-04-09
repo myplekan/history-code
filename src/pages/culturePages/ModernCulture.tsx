@@ -157,7 +157,7 @@ export const ModernCulture = () => {
       </div>
 
       <img
-        className="mb-16"
+        className="mb-10"
         src={process.env.PUBLIC_URL + "/images/full/full-modernCulture2.png"}
         alt="Art"
       />

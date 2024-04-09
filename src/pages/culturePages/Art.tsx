@@ -291,7 +291,7 @@ export const Art = () => {
       </div>
 
       <img
-        className="mb-24"
+        className="mb-10"
         src={process.env.PUBLIC_URL + "/images/full/full-art3.png"}
         alt="Art"
       />

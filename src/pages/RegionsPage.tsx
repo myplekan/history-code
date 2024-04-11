@@ -40,7 +40,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://f.discover.ua/region/22/7nVjq.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Cherkasy.jpg"
+                }
                 x="230"
                 y="115"
                 width="25%"
@@ -55,7 +57,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://img.freepik.com/premium-photo/aerial-view-of-baturyn-fortress-with-the-seym-river-in-chernihiv-oblast-of-ukraine_261932-4138.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Chernihiv.jpeg"
+                }
                 x="240"
                 y="0"
                 width="28%"
@@ -70,7 +74,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Chernivtsi_University.jpg/800px-Chernivtsi_University.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Chernivtsi.jpg"
+                }
                 x="50"
                 y="165"
                 width="27%"
@@ -85,7 +91,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://upload.wikimedia.org/wikipedia/commons/7/77/Dnipropetrovsk_view_2015_tov-tob.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Dnipropetrovsk.jpg"
+                }
                 x="340"
                 y="165"
                 width="27%"
@@ -100,7 +108,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://s.62.ua/section/newsInText/upload/images/news/intext/000/055/649/oig-2_651d2252051aa.jpeg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Donetsk.jpeg"
+                }
                 x="450"
                 y="170"
                 width="29%"
@@ -115,7 +125,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://zebratrip.com/uploads/posts/2021-12/medium/viaduk-u-vorohti.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Ivano-Frankivsk.jpg"
+                }
                 x="0"
                 y="150"
                 width="29%"
@@ -130,7 +142,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://st4.depositphotos.com/33092568/41601/i/450/depositphotos_416014678-stock-photo-aerial-view-derzhprom-building-freedom.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Kharkiv.jpg"
+                }
                 x="400"
                 y="100"
                 width="29%"
@@ -145,7 +159,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://ribas.ua//img/blog/25_11_2020/flying_above_the_pink_planet-1024x576.jpg.webp"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Kherson.jpg"
+                }
                 x="300"
                 y="240"
                 width="29%"
@@ -160,7 +176,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://zebratrip.com/uploads/posts/2022-03/kamjanec-podilska-fortecja.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Khmelnytskyi.jpg"
+                }
                 x="65"
                 y="90"
                 width="29%"
@@ -175,7 +193,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://riara.com.ua/wp-content/uploads/2019/08/480d85922bc40317dd1e718afc3d9ed3.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Kyiv.jpg"
+                }
                 x="190"
                 y="40"
                 width="33%"
@@ -190,7 +210,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://lib.kr.ua/wp-content/uploads/2018/07/bib.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Kropyvnytskyi.jpg"
+                }
                 x="250"
                 y="150"
                 width="27%"
@@ -205,7 +227,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://ukraine.ua/wp-content/uploads/2023/02/18814547_742342095948093_5972940676210772750_o.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Luhansk.jpg"
+                }
                 x="500"
                 y="125"
                 width="29%"
@@ -220,7 +244,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://varta1.com.ua/uploads/media/34/3y/343yzf1ba92653a0df8a51473d86506b_orig.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Lviv.jpg"
+                }
                 x="0"
                 y="95"
                 width="25%"
@@ -235,7 +261,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://inside-ua.com/files/categories2/region-mykolaivska-oblast.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Mykolaiv.jpg"
+                }
                 x="225"
                 y="195"
                 width="32%"
@@ -250,7 +278,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://pro-cikave.com.ua/wp-content/uploads/2022/06/62792797.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Odesa.jpg"
+                }
                 x="200"
                 y="220"
                 width="38%"
@@ -265,7 +295,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://dost.mistaua.com/2011/703_1_2.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Poltava.jpg"
+                }
                 x="320"
                 y="100"
                 width="25%"
@@ -280,7 +312,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://inside-ua.com/files/categories2/region-rivnenska-oblast.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Rivne.jpeg"
+                }
                 x="55"
                 y="20"
                 width="30%"
@@ -295,7 +329,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://ukrainaincognita.com/wp-content/uploads/files/u3/sumy_akad2.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Sumu.jpg"
+                }
                 x="305"
                 y="0"
                 width="30%"
@@ -310,7 +346,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://f.discover.ua/location/3756/0Y3WN.jpeg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Ternopil.jpeg"
+                }
                 x="50"
                 y="115"
                 width="23%"
@@ -325,7 +363,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://jivavoda.com.ua/upload/blog/1_article-ozero.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Zakarpattia.jpg"
+                }
                 x="0"
                 y="175"
                 width="20%"
@@ -340,7 +380,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://inside-ua.com/files/cities2/city-vinnytsia.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Vinnytsia.jpg"
+                }
                 x="140"
                 y="135"
                 width="27%"
@@ -355,7 +397,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://konkurent.ua/media/cache/0f/73/0f736ba6b6b5f0f9879af06bc9a63726.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Volyn.jpg"
+                }
                 x="40"
                 y="10"
                 width="27%"
@@ -370,7 +414,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://cdn.vogue.ua/i/image_720x/uploads/article-inline/554/275/fff/32_main_v1589533800_627ffff275554.jpeg.webp"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Zaporizhia.jpg"
+                }
                 x="400"
                 y="220"
                 width="27%"
@@ -385,7 +431,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://dovidka.biz.ua/wp-content/uploads/2018/11/tsikavi-fakty-pro-zhytomyr-ta-oblast.jpg"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Zhytomyr.jpg"
+                }
                 x="120"
                 y="30"
                 width="30%"
@@ -400,7 +448,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://babel.ua/static/content/nqyjccwr/thumbs/1200x630/9/f5/f118c108ab40bd9f619b65bee7764f59.jpeg?v=8473"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Crimea.jpeg"
+                }
                 x="330"
                 y="310"
                 width="27%"
@@ -415,7 +465,9 @@ export const RegionsPage = () => {
               height="100%"
             >
               <image
-                xlinkHref="https://babel.ua/static/content/nqyjccwr/thumbs/1200x630/9/f5/f118c108ab40bd9f619b65bee7764f59.jpeg?v=8473"
+                xlinkHref={
+                  process.env.PUBLIC_URL + "/images/region/region-Crimea.jpeg"
+                }
                 x="330"
                 y="310"
                 width="27%"
@@ -435,10 +487,9 @@ export const RegionsPage = () => {
               id="SevastopolCity"
               target="_new"
               href="https://en.wikipedia.org/wiki/Sevastopol"
-              style={{ fill: "url(#backgroundCrimea)" }}
             >
               <path
-                className="mapBackground"
+                className="mapBackground capital"
                 d="m 386.51191,387.77242 0.86,-0.12 0.87,0.54 2.18,0.08 0.53,0.47 0.33,1.49 -0.67,0.34 -0.97,-0.14 -0.43,0.48 0.1,0.75 0.86,0.81 2.42,-0.95 1.69,1.01 0.24,1.1 -0.14,0.39 -1.16,0.69 -0.05,1.75 0.29,0.54 2.85,1.42 0.39,2.3 2.56,4.19 -0.48,0.88 -0.73,0 -0.34,0.33 -0.04,0.82 0,0 -1.35,-0.02 -2,0.76 -1.48,0.08 -1.06,-1.64 -1.34,0.13 -0.55,-0.34 -0.5,-2.08 -0.65,-0.82 -0.44,-0.21 -1.61,0.2 -1.69,-0.72 -0.6,0.29 -1.09,-1.54 -1.86,-1.38 -0.74,-1.07 0.74,-0.38 0.01,0.87 0.25,-0.21 0.03,0.38 0.25,-1.11 0.55,1 -0.34,-1.2 0.38,-0.32 2.63,-0.62 2.67,0.16 -0.98,-0.59 -1.7,-0.29 0.76,-0.53 0.46,-1.45 -0.39,-5.71 z"
               ></path>
             </a>
@@ -526,7 +577,7 @@ export const RegionsPage = () => {
                 d="m 48.041905,194.62242 -0.2,-0.72 1.21,-2.14 -0.82,-2.07 0.64,-1.17 0.05,-1 1.14,-0.53 -0.14,-0.38 -1.09,-0.39 -0.35,-0.94 0.87,-2.19 -0.7,-1.08 1.81,-1.98 0.17,-0.69 0.35,-0.28 0.5,0.32 0.66,-0.5 0.71,-3.15 0.68,-0.37 0.41,0.27 1.2,-1.36 0.52,0.38 0.28,-0.15 0.58,0.67 1.35,-0.4 2.13,0.68 0.28,-0.54 2.02,-1.43 1.3,0.52 0.33,0.65 1.39,-1.6 2.69,0.4 0.36,0.57 0.51,0.08 0.25,-0.85 0.83,0.28 0.34,-0.53 0.81,0.22 1.63,-1.28 2.64,-0.86 0.81,-0.13 1.13,0.98 0.61,-0.26 -0.02,-0.96 0.45,-0.83 -0.23,-0.36 0.39,-0.77 -2.2,0.15 -1.26,-0.29 -0.33,-0.56 0.45,-0.42 0.4,-1.43 -0.91,-0.41 -1.15,0.21 -0.09,-0.95 0.04,-0.74 1.35,0.34 0.62,-0.59 0.59,0.5 0.77,-1.26 -0.24,-0.96 1.43,-1.28 -1.58,-0.74 -0.61,-1.91 0.4,-0.6 0.96,-0.17 0.21,-1.4 -0.46,-1.13 0.36,-0.54 1.13,-0.09 -0.34,-1.57 1.03,-0.65 0.03,-0.31 0.41,0.14 -0.14,-0.35 0.89,0.19 0.7,0.67 -0.49,0.32 0.36,0.6 0.8,0.08 1.03,-0.63 0.8,1.02 1.42,0.82 0.59,-0.39 1.49,0.66 0.77,-0.12 0,0 1.38,3.1 0.52,2.61 0.54,0.27 0.69,-0.34 0.42,0.3 0.34,1.18 0.77,0.53 -1.09,1.62 0.09,1.6 0.42,0.44 0.11,0.87 2.87,1.43 -2.44,2.87 0.02,0.86 1.49,1.72 1.96,0.2 0.75,0.4 -0.31,1.8 0.53,0.14 0.05,0.49 -2.52,-0.6 -0.4,1.45 2.12,2.17 -0.03,0.96 1.74,-0.91 2.440005,1.53 0.83,-0.81 -0.19,1.64 1.25,1.01 -0.96,1 0.73,2.89 0.61,0.21 0.38,-0.27 -0.1,-1.32 1,-0.91 -0.21,-0.68 0.67,0.24 0.84,-0.49 -0.18,2.53 -0.69,1.77 0.6,0 0.66,-1.04 1.16,0.28 0.49,0.92 0.79,-0.11 0.27,0.3 -0.38,0.7 -1.78,0.02 -0.68,0.46 -0.15,0.81 0.56,0.9 0.92,0.09 0.44,-1.15 0.7,-0.74 0.46,0.07 0.5,0.67 0.38,-0.1 -0.31,-2.63 0.79,-0.03 2.07,0.81 0.3,-0.38 -0.37,-0.91 0.25,-0.21 0.61,0.26 0.55,0.61 -0.67,0.8 0.18,0.43 1.71,1.3 1.33,0.17 1.84,1.88 1.39,0.87 -0.14,0.48 -0.9,0.69 0.12,0.45 1.32,0.52 -0.04,0.5 -1.03,0.89 0.29,0.38 0,0 -1.53,2.19 0.25,0.34 -0.05,1.75 0.49,0.95 -0.05,6.24 0.73,2.5 -0.35,0.85 -2.28,0 -0.81,-0.75 -1.82,-0.3 -1.08,0.42 -1.29,-0.02 -2.18,0.92 -2.47,2.53 -2.66,3.83 -1.32,0.25 -1.25,1.1 0.38,0.26 -0.09,0.54 0.8,0.66 -0.08,0.67 -0.33,0.17 -0.9,-0.36 -0.53,0.24 0.25,0.93 -0.860005,0.21 -0.03,1.32 -0.92,0.23 -0.13,0.86 -1.13,-0.45 -0.55,0.23 -0.18,0.36 0.47,1.1 -2.75,3.01 0.24,0.91 -0.42,0.7 0.49,1.6 -0.17,0.4 0.32,0.16 -0.28,0.34 1.28,1.41 0.11,0.76 -0.49,0.2 0.11,0.5 1.23,1.13 -0.09,0.37 0.51,0.19 -0.47,1.38 -1.22,1.72 -0.85,3.35 0,0 -1.3,0.16 -0.24,-1.46 -1.39,-1.37 0.02,-0.64 -0.5,-0.63 0.22,-0.71 -1.5,-0.25 -0.18,-0.59 -0.4,-0.13 -0.48,0.46 -0.56,-0.67 -1.02,0.12 -0.11,-0.63 -1.04,-0.56 -0.19,-0.6 0.25,-0.97 -0.74,-1.19 -0.5,-0.24 -0.31,-1.28 -0.63,-0.08 -0.32,0.28 -0.56,-0.99 -0.6,-0.14 0,0 0.4,-2.64 1.69,-1.46 -0.93,-1.95 -1.33,-0.84 -0.22,-0.74 -0.76,-0.29 -0.94,-1.73 0.59,-0.86 -0.3,-0.54 0.46,-0.42 -0.11,-0.32 0.83,-0.89 -0.66,-0.77 -1.39,-0.58 0.24,-1.36 -0.26,-0.51 -1.45,-1.11 -0.92,-1.39 -1.68,-0.88 -0.49,-0.6 0.17,-0.83 -0.58,-0.51 -1.78,-0.37 0.06,0.7 -1.08,1.57 -0.42,-0.44 -2.17,-0.45 0.02,-0.36 -1.02,-0.69 0.09,-0.67 -0.42,-0.42 0.14,-1.24 -0.52,-0.57 -0.09,-0.96 0.54,-0.79 -0.51,-0.58 -0.05,-1.23 0.32,-0.54 -0.44,-0.46 -1.04,0.43 -0.46,0.69 -0.37,-0.24 -1.04,0.77 -1.29,-0.24 -0.71,1.62 0.1,0.47 -0.36,0.29 -1.64,-0.42 -0.46,-0.86 0.58,-3.04 -0.65,-0.88 -1.89,0.38 -1.82,-1.86 -0.2,-2.32 -2.8,-0.15 -2.28,-2.24 -0.05,-0.83 -0.43,-0.38 -0.82,-0.02 -0.29,-0.66 z"
               ></path>
             </g>
-         
+
             <a
               id="Kharkiv"
               target="_new"
@@ -744,315 +795,87 @@ export const RegionsPage = () => {
             </a>
 
             <g className="cityName cityKiev">
-              <RegionHover x={260} y={90} width={85} region={"Київська"} />
-
-              {/* <text transform="matrix(1 0 0 1 262.1168 90.3494)">Київ</text>
-              <circle
-                cx="288.787"
-                cy="106.3165"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={260} y={80} width={85} region={"Київська"} />
             </g>
             <g className="cityName cityZhytomyr">
-              <RegionHover x={200} y={100} width={120} region={"Житомирська"} />
-
-              {/* <text transform="matrix(1 0 0 1 183.067 98.0162)">Житомир</text>
-              <circle
-                cx="205"
-                cy="114.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={200} y={80} width={120} region={"Житомирська"} />
             </g>
             <g className="cityName cityZaporizhia">
-              <RegionHover x={445} y={285} width={100} region={"Запорізька"} />
-
-              {/* <text transform="matrix(1 0 0 1 436 258)">Запоріжжя</text>
-              <circle
-                cx="435"
-                cy="241.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={445} y={245} width={100} region={"Запорізька"} />
             </g>
             <g className="cityName cityLutsk">
-              <RegionHover x={75} y={80} width={100} region={"Волинська"} />
-
-              {/* <text transform="matrix(1 0 0 1 75.067 80)">Луцьк</text>
-              <circle
-                cx="105"
-                cy="87.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={75} y={50} width={100} region={"Волинська"} />
             </g>
             <g className="cityName cityVinnytsia">
-              <RegionHover x={205} y={185} width={95} region={"Вінницька"} />
-
-              {/* <text transform="matrix(1 0 0 1 205 185)">Вінниця</text>
-              <circle
-                cx="209"
-                cy="169.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={205} y={155} width={95} region={"Вінницька"} />
             </g>
             <g className="cityName cityTernopil">
-              <RegionHover
-                x={110}
-                y={165}
-                width={125}
-                region={"Тернопільська"}
+              <RegionHover x={110} y={135} width={125} region={"Тернопільська"}
               />
-
-              {/* <text transform="matrix(1 0 0 1 92.45 165.9629)">Тернопіль</text>
-              <circle
-                cx="118"
-                cy="152.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName citySumu">
-              <RegionHover x={390} y={80} width={80} region={"Сумська"} />
-
-              {/* <text transform="matrix(1 0 0 1 392.25 81.8295)">Суми</text>
-              <circle
-                cx="427"
-                cy="83.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={390} y={50} width={80} region={"Сумська"} />
             </g>
             <g className="cityName cityRivne">
-              <RegionHover x={135} y={85} width={100} region={"Рівненська"} />
-
-              {/* <text transform="matrix(1 0 0 1 135 85)">Рівне</text>
-              <circle
-                cx="140"
-                cy="91.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={135} y={35} width={100} region={"Рівненська"} />
             </g>
             <g className="cityName cityPoltava">
               <RegionHover x={380} y={135} width={105} region={"Полтавcька"} />
-
-              {/* <text transform="matrix(1 0 0 1 377.25 135)">Полтава</text>
-              <circle
-                cx="415"
-                cy="141.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName cityOdessa">
-              <RegionHover x={270} y={300} width={85} region={"Одеська"} />
-
-              {/* <text transform="matrix(1 0 0 1 270 302)">Одеса</text>
-              <circle
-                cx="288"
-                cy="309.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={270} y={270} width={85} region={"Одеська"} />
             </g>
             <g className="cityName cityMykolaiv">
-              <RegionHover
-                x={310}
-                y={265}
-                width={120}
-                region={"Миколаївська"}
+              <RegionHover x={310} y={235} width={120} region={"Миколаївська"}
               />
-
-              {/* <text transform="matrix(1 0 0 1 310.25 265.5)">Миколаїв</text>
-              <circle
-                cx="340"
-                cy="275.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName cityLviv">
               <RegionHover x={65} y={135} width={90} region={"Львівська"} />
-
-              {/* <text transform="matrix(1 0 0 1 65 134)">Львів</text>
-              <circle
-                cx="63"
-                cy="140.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName cityLuhansk">
-              <RegionHover x={525} y={190} width={95} region={"Луганська"} />
-
-              {/* <text transform="matrix(1 0 0 1 549 190)">Луганськ</text>
-              <circle
-                cx="582"
-                cy="200.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={525} y={150} width={95} region={"Луганська"} />
             </g>
             <g className="cityName cityKhmelnytskyi">
-              <RegionHover x={150} y={150} width={120} region={"Хмельницька"} />
-
-              {/* <text transform="matrix(1 0 0 1 120 152.9629)">Хмельницький</text>
-              <circle
-                cx="162"
-                cy="161.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={150} y={130} width={120} region={"Хмельницька"} />
             </g>
             <g className="cityName cityKherson">
-              <RegionHover x={370} y={300} width={105} region={"Херсонська"} />
-
-              {/* <text transform="matrix(1 0 0 1 373.95 298)">Херсон</text>
-              <circle
-                cx="364"
-                cy="297.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={380} y={275} width={105} region={"Херсонська"} />
             </g>
             <g className="cityName cityKharkiv">
               <RegionHover x={485} y={130} width={100} region={"Харківська"} />
-
-              {/* <text transform="matrix(1 0 0 1 485 128)">Харків</text>
-              <circle
-                cx="484"
-                cy="133.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName cityIvano-Frankivsk">
-              <RegionHover
-                x={80}
-                y={200}
-                width={155}
-                region={"Івано-Франківська"}
+              <RegionHover x={80} y={170} width={155} region={"Івано-Франківська"}
               />
-
-              {/* <text transform="matrix(1 0 0 1 40 200)">Івано-Франківськ</text>
-              <circle
-                cx="87"
-                cy="185.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName cityDonetsk">
-              <RegionHover x={510} y={230} width={90} region={"Донецька"} />
-
-              {/* <text transform="matrix(1 0 0 1 511.0501 230.5)">Донецьк</text>
-              <circle
-                cx="526"
-                cy="235.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={510} y={200} width={90} region={"Донецька"} />
             </g>
             <g className="cityName cityDnipro">
-              <RegionHover
-                x={420}
-                y={210}
-                width={155}
-                region={"Дніпропетровська"}
+              <RegionHover x={420} y={210} width={155} region={"Дніпропетровська"}
               />
-
-              {/* <text transform="matrix(1 0 0 1 424.7498 208.7631)">Дніпро</text>
-              <circle
-                cx="423"
-                cy="210.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName cityCherkasy">
               <RegionHover x={310} y={155} width={100} region={"Черкаська"} />
-
-              {/* <text transform="matrix(1 0 0 1 307 155)">Черкаси</text>
-              <circle
-                cx="337"
-                cy="161.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName cityChernivtsi">
               <RegionHover x={125} y={210} width={115} region={"Чернівецька"} />
-
-              {/* <text transform="matrix(1 0 0 1 126 213)">Чернівці</text>
-              <circle
-                cx="125"
-                cy="216.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName cityUzhhorod">
-              <RegionHover x={15} y={210} width={120} region={"Закарпатська"} />
-
-              {/* <text transform="matrix(1 0 0 1 13.7499 208.7629)">Ужгород</text>
-              <circle
-                cx="11"
-                cy="198.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={15} y={190} width={120} region={"Закарпатська"} />
             </g>
             <g className="cityName cityKropyvnytskyi">
-              <RegionHover
-                x={290}
-                y={210}
-                width={135}
-                region={"Кіровоградська"}
+              <RegionHover x={330} y={190} width={135} region={"Кіровоградська"}
               />
-
-              {/* <text transform="matrix(1 0 0 1 290 208.763)">Кропивницький</text>
-              <circle
-                cx="338"
-                cy="212.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
             </g>
             <g className="cityName cityChernihiv">
-              <RegionHover x={310} y={50} width={115} region={"Чернігівська"} />
-
-              {/* <text transform="matrix(1 0 0 1 310.25 51.6999)">Чернігів</text>
-              <circle
-                cx="308.787"
-                cy="54.3165"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={310} y={30} width={115} region={"Чернігівська"} />
             </g>
             <g className="cityName citySimferopol">
-              <RegionHover x={390} y={370} width={145} region={"Автономна"} />
-
-              {/* <text transform="matrix(1 0 0 1 390 370)">Сімферополь</text>
-              <circle
-                cx="406"
-                cy="377.4317"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={390} y={340} width={145} region={"Автономна"} />
             </g>
             <g className="cityName citySevastopol">
-              <RegionHover x={390} y={370} width={145} region={"Автономна"} />
-
-              {/* <text transform="matrix(1 0 0 1 390 394)">Севастополь</text>
-              <circle
-                cx="388"
-                cy="396"
-                r="2"
-                className="pointerCircle"
-              ></circle> */}
+              <RegionHover x={390} y={340} width={145} region={"Автономна"} />
             </g>
           </g>
         </svg>

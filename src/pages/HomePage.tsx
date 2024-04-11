@@ -18,7 +18,7 @@ export const HomePage = () => {
         </h1>
 
         <Link
-          to="/history"
+          to="/regions"
           className="flex self-center justify-center items-center bg-primary px-6 py-5 rounded-full mb-9 font-semibold hover:bg-second duration-300"
         >
           Читати більше

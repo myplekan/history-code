@@ -33,7 +33,7 @@ export const Challenge = () => {
     <main className="pt-24 pb-[66px]">
       <div className="flex flex-col gap-2 px-10">
         <div className="flex gap-10 items-center">
-          <div className="w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-emerald-500">
+          <div className="w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-green">
             T
           </div>
 
@@ -43,7 +43,7 @@ export const Challenge = () => {
           </span>
         </div>
         <div className="flex gap-10 items-center">
-          <div className="w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-neutral-400">
+          <div className="w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-red">
             T
           </div>
 
@@ -52,7 +52,7 @@ export const Challenge = () => {
           </span>
         </div>
         <div className="flex gap-10 items-center">
-          <div className="w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-neutral-100">
+          <div className="w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-sky-500">
             T
           </div>
 
@@ -65,13 +65,13 @@ export const Challenge = () => {
             <input
               key={item}
               className={classNames(
-                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-primary",
+                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold",
                 {
-                  "bg-emerald-500":
+                  "bg-green":
                     wordState[0][i].toUpperCase() === word[i] && turn > 0,
-                  "bg-neutral-400":
+                  "bg-red":
                     wordState[0][i].toUpperCase() !== word[i] && turn > 0,
-                  "bg-neutral-100":
+                  "bg-sky-500":
                     word.includes(wordState[0][i].toUpperCase()) &&
                     wordState[0][i].toUpperCase() !== word[i] &&
                     turn > 0,
@@ -98,13 +98,13 @@ export const Challenge = () => {
             <input
               key={item}
               className={classNames(
-                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-primary",
+                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold",
                 {
-                  "bg-emerald-500":
+                  "bg-green":
                     wordState[1][i].toUpperCase() === word[i] && turn > 1,
-                  "bg-neutral-400":
+                  "bg-red":
                     wordState[1][i].toUpperCase() !== word[i] && turn > 1,
-                  "bg-neutral-100":
+                  "bg-sky-500":
                     word.includes(wordState[1][i].toUpperCase()) &&
                     wordState[1][i].toUpperCase() !== word[i] &&
                     turn > 1,
@@ -132,13 +132,13 @@ export const Challenge = () => {
             <input
               key={item}
               className={classNames(
-                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-primary",
+                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold",
                 {
-                  "bg-emerald-500":
+                  "bg-green":
                     wordState[2][i].toUpperCase() === word[i] && turn > 2,
-                  "bg-neutral-400":
+                  "bg-red":
                     wordState[2][i].toUpperCase() !== word[i] && turn > 2,
-                  "bg-neutral-100":
+                  "bg-sky-500":
                     word.includes(wordState[2][i].toUpperCase()) &&
                     wordState[2][i].toUpperCase() !== word[i] &&
                     turn > 2,
@@ -166,13 +166,13 @@ export const Challenge = () => {
             <input
               key={item}
               className={classNames(
-                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-primary",
+                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold",
                 {
-                  "bg-emerald-500":
+                  "bg-green":
                     wordState[3][i].toUpperCase() === word[i] && turn > 3,
-                  "bg-neutral-400":
+                  "bg-red":
                     wordState[3][i].toUpperCase() !== word[i] && turn > 3,
-                  "bg-neutral-100":
+                  "bg-sky-500":
                     word.includes(wordState[3][i].toUpperCase()) &&
                     wordState[3][i].toUpperCase() !== word[i] &&
                     turn > 3,
@@ -200,13 +200,13 @@ export const Challenge = () => {
             <input
               key={item}
               className={classNames(
-                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-primary",
+                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold",
                 {
-                  "bg-emerald-500":
+                  "bg-green":
                     wordState[4][i].toUpperCase() === word[i] && turn > 4,
-                  "bg-neutral-400":
+                  "bg-red":
                     wordState[4][i].toUpperCase() !== word[i] && turn > 4,
-                  "bg-neutral-100":
+                  "bg-sky-500":
                     word.includes(wordState[4][i].toUpperCase()) &&
                     wordState[4][i].toUpperCase() !== word[i] &&
                     turn > 4,
@@ -234,13 +234,13 @@ export const Challenge = () => {
             <input
               key={item}
               className={classNames(
-                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold bg-primary",
+                "w-10 px-1 py-2 border-2 border-sky-600 rounded-lg outline-0 text-center uppercase font-bold",
                 {
-                  "bg-emerald-500":
+                  "bg-green":
                     wordState[5][i].toUpperCase() === word[i] && turn > 5,
-                  "bg-neutral-400":
+                  "bg-red":
                     wordState[5][i].toUpperCase() !== word[i] && turn > 5,
-                  "bg-neutral-100":
+                  "bg-sky-500":
                     word.includes(wordState[5][i].toUpperCase()) &&
                     wordState[5][i].toUpperCase() !== word[i] &&
                     turn > 5,

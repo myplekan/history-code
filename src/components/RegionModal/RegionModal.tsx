@@ -50,7 +50,7 @@ export const RegionModal: React.FC<Props> = ({ regionName, setRegion }) => {
         </div>
 
         <div className="max-w-[510px]">
-          <h2 className="font-rutenia text-[52px] mb-4">{region} область</h2>
+          <h2 className="font-rutenia text-[52px] mb-4">{region} {regionName === 'Crimea' ? '' : 'область'}</h2>
 
           <div className="flex items-center gap-4 text-2xl mb-8 text-gray-100">
             <img

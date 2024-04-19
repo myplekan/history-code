@@ -3,8 +3,12 @@ import { AnimatePrint } from "../../components/AnimatePrint/AnimatePrint";
 import { ArrowUp } from "../../components/ArrowUp/ArrowUp";
 import { BackArrow } from "../../components/BackArrow/BackArrow";
 import { MoreAndLike } from "../../components/MoreAndLike/MoreAndLike";
+import { findDescription } from "../../functions/findDescription";
+import { Culture } from "../../types/culture";
 
 export const Cooking = () => {
+  const data: Culture = findDescription("culture", 4) as Culture;
+
   return (
     <main>
       <div className="h-screen bg-black-opacity-60 mb-20">
@@ -231,7 +235,7 @@ export const Cooking = () => {
       </div>
 
       <div className="flex justify-end gap-4 px-10 mb-32">
-        <MoreAndLike />
+        <MoreAndLike data={data} />
       </div>
 
       <ArrowUp />

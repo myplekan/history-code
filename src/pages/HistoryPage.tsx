@@ -1,72 +1,24 @@
 import { ArrowUp } from "../components/ArrowUp/ArrowUp";
 import { HistoryCultureCard } from "../components/HistoryCultureCard/HistoryCultureCard";
+import historyData from "../history.json";
 
 export const HistoryPage = () => {
+  const history = historyData.history;
+
   return (
     <main className="pt-[102px] px-10">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16">
         <h1 className="text-[52px] font-medium text-gray-100">Історія</h1>
-        <img
+        {/* <img
           src={process.env.PUBLIC_URL + "/images/svg/search.svg"}
           alt="Search"
-        />
+        /> */}
       </div>
 
       <div className="flex flex-wrap gap-16 justify-between pb-44">
-        <HistoryCultureCard
-          name={"old-rus"}
-          photo={"history/history1.png"}
-          title={"Давньоруський період"}
-          year={"(IX-XIII століття)"}
-          description={
-            "Формування Київської Русі, розквіт культури та державотворення."
-          }
-        />
-        <HistoryCultureCard
-          name={"mongol-invasion"}
-          photo={"history/history2.png"}
-          title={"Монгольське нашестя та розпад Русі"}
-          year={"(XIII століття)"}
-          description={
-            "Занепад та розпад Київської Русі після монгольського вторгнення."
-          }
-        />
-        <HistoryCultureCard
-          name={"cossack-state"}
-          photo={"history/history3.png"}
-          title={"Утворення козацької держави"}
-          year={"(XVI - XVI століття)"}
-          description={
-            "Виникнення Козацької держави та епоха Запорозького козацтва."
-          }
-        />
-        <HistoryCultureCard
-          name={"division"}
-          photo={"history/history4.png"}
-          title={"Поділ України"}
-          year={"(XVIII століття)"}
-          description={
-            "Розподіл України між Австрійською, Російською та Польською імперіями."
-          }
-        />
-        <HistoryCultureCard
-          name={"independence"}
-          photo={"history/history5.png"}
-          title={"Незалежність та радянський період"}
-          year={"(1917-1991 рр.)"}
-          description={
-            "Утворення УНР, громадянська війна, включення до складу СРСР, після якого настає радянський період"
-          }
-        />
-        <HistoryCultureCard
-          name={"modern-independence"}
-          photo={"history/history6.png"}
-          title={"Сучасна незалежна Україна"}
-          year={"(1991-до сьогодні)"}
-          description={
-            "Проголошення незалежності, реформи, включення до міжнародних структур та вирішення складних внутрішньополітичних та зовнішньополітичних питань."
-          }
-        />
+      {history.map((item) => (
+          <HistoryCultureCard key={item.id} data={item} />
+        ))}
       </div>
 
       <ArrowUp />

@@ -3,8 +3,12 @@ import { ArrowUp } from "../../components/ArrowUp/ArrowUp";
 import { AnimateImg } from "../../components/AnimateImg/AnimateImg";
 import { BackArrow } from "../../components/BackArrow/BackArrow";
 import { MoreAndLike } from "../../components/MoreAndLike/MoreAndLike";
+import { Culture } from "../../types/culture";
+import { findDescription } from "../../functions/findDescription";
 
 export const Language = () => {
+  const data: Culture = findDescription("culture", 1) as Culture;
+
   return (
     <main>
       <div className="h-screen bg-black-opacity-60 mb-20">
@@ -320,7 +324,7 @@ export const Language = () => {
       </div>
 
       <div className="flex justify-end gap-4 px-10 mb-32">
-        <MoreAndLike />
+        <MoreAndLike data={data} />
       </div>
 
       <ArrowUp />

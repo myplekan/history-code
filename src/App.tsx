@@ -21,6 +21,7 @@ import { Cooking } from "./pages/culturePages/Cooking";
 import { Architecture } from "./pages/culturePages/Architecture";
 import { ModernCulture } from "./pages/culturePages/ModernCulture";
 import { Challenge } from "./pages/Challenge";
+import { LikePage } from "./pages/LikePage";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -49,6 +50,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/regions" element={<RegionsPage />} />
           <Route path="/challenge" element={<Challenge />} />
+          <Route path="/like" element={<LikePage />} />
           <Route path="/history">
             <Route index element={<HistoryPage />} />
             <Route path="old-rus" element={<OldRus />} />

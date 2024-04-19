@@ -2,8 +2,12 @@ import { AnimatePrint } from "../../components/AnimatePrint/AnimatePrint";
 import { ArrowUp } from "../../components/ArrowUp/ArrowUp";
 import { BackArrow } from "../../components/BackArrow/BackArrow";
 import { MoreAndLike } from "../../components/MoreAndLike/MoreAndLike";
+import { findDescription } from "../../functions/findDescription";
+import { History } from "../../types/history";
 
 export const MongolInvasion = () => {
+  const data: History = findDescription("history", 2) as History;
+
   return (
     <main>
       <div className="h-screen bg-black-opacity-60 mb-20">
@@ -90,7 +94,7 @@ export const MongolInvasion = () => {
       </div>
 
       <div className="flex justify-end gap-4 px-10 mb-16">
-        <MoreAndLike />
+        <MoreAndLike data={data} />
       </div>
 
       <AnimatePrint />

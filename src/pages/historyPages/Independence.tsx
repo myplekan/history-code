@@ -3,8 +3,12 @@ import { AnimatePrint } from "../../components/AnimatePrint/AnimatePrint";
 import { ArrowUp } from "../../components/ArrowUp/ArrowUp";
 import { BackArrow } from "../../components/BackArrow/BackArrow";
 import { MoreAndLike } from "../../components/MoreAndLike/MoreAndLike";
+import { findDescription } from "../../functions/findDescription";
+import { History } from "../../types/history";
 
 export const Independence = () => {
+  const data: History = findDescription("history", 5) as History;
+
   return (
     <main>
       <div className="h-screen bg-black-opacity-60 mb-20">
@@ -130,7 +134,7 @@ export const Independence = () => {
       </div>
 
       <div className="flex justify-end gap-4 px-10 mb-8">
-        <MoreAndLike />
+        <MoreAndLike data={data} />
       </div>
 
       <ArrowUp />

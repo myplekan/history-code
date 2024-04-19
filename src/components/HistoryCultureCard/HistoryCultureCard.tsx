@@ -2,49 +2,41 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { scrollToTop } from "../../services/goTop";
 import { MoreAndLike } from "../MoreAndLike/MoreAndLike";
+import { Culture } from "../../types/culture";
+import { History } from "../../types/history";
 
 type Props = {
-  name: string;
-  photo: string;
-  title: string;
-  year?: string;
-  description: string;
+  data: History | Culture;
 };
 
-export const HistoryCultureCard: React.FC<Props> = ({
-  name,
-  photo,
-  title,
-  year,
-  description,
-}) => {
+export const HistoryCultureCard: React.FC<Props> = ({ data }) => {
   const location = useLocation();
   const currentUrl = location.pathname;
 
   return (
     <div className="grow basis-50 p-2 border-2 border-transparent hover:border-gray-50 duration-300">
       <img
-        className="w-full mb-4 object-center hover:scale-105 direction-300"
-        src={process.env.PUBLIC_URL + `/images/${photo}`}
-        alt={photo}
+        className="w-full mb-4 object-center"
+        src={process.env.PUBLIC_URL + `/images/${data.photo}`}
+        alt={data.photo}
       />
 
       <div className="flex justify-between items-center gap-4">
         <Link
           className="duration-300 text-gray-100 hover:text-primary"
-          to={`${currentUrl}/${name}`}
+          to={`${currentUrl}/${data.name}`}
           onClick={scrollToTop}
         >
-          <h3 className="text-2xl font-semibold leading-5">{title}</h3>
-          {year && <span className="text-base">{year}</span>}
+          <h3 className="text-2xl font-semibold leading-5">{data.title}</h3>
+          {('year' in data) && <span className="text-base">{data.year}</span>}
         </Link>
 
         <div className="flex gap-4">
-          <MoreAndLike />
+          <MoreAndLike data={data} />
         </div>
       </div>
 
-      <div className="pt-2 text-base">{description}</div>
+      <div className="pt-2 text-base">{data.description}</div>
     </div>
   );
 };

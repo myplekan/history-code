@@ -11,10 +11,6 @@ export const RegionsPage = () => {
     <main className="pt-24 pb-[66px]">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16 px-10">
         <h1 className="text-[52px] font-medium">Регіони України</h1>
-        <img
-          src={process.env.PUBLIC_URL + "/images/svg/search.svg"}
-          alt="Search"
-        />
       </div>
 
       <div className="relative flex justify-end">

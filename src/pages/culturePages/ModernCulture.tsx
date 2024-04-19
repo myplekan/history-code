@@ -1,8 +1,12 @@
 import { ArrowUp } from "../../components/ArrowUp/ArrowUp";
 import { BackArrow } from "../../components/BackArrow/BackArrow";
 import { MoreAndLike } from "../../components/MoreAndLike/MoreAndLike";
+import { findDescription } from "../../functions/findDescription";
+import { Culture } from "../../types/culture";
 
 export const ModernCulture = () => {
+  const data: Culture = findDescription("culture", 6) as Culture;
+
   return (
     <main>
       <div className="h-screen bg-black-opacity-60 mb-20">
@@ -163,7 +167,7 @@ export const ModernCulture = () => {
       />
 
       <div className="flex justify-end gap-4 px-10 mb-32">
-        <MoreAndLike />
+        <MoreAndLike data={data} />
       </div>
 
       <ArrowUp />

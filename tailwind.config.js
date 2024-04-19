@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,tsx}"],
   theme: {
     extend: {
+      minHeight: {
+        'min': 'calc(100vh - 167px)',
+      },
       flexBasis: {
         50: "calc(50% - 64px)",
       },

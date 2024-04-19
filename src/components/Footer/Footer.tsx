@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Logo } from "../Logo/Logo";
 import { Nav } from "../Nav/Nav";
+import { scrollToTop } from "../../services/goTop";
 
 export const Footer = () => {
   return (
@@ -13,7 +14,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex gap-8">
-          <Link to="/">
+          <Link to="/" onClick={scrollToTop}>
             <svg
               width="30"
               height="30"
@@ -28,7 +29,7 @@ export const Footer = () => {
             </svg>
           </Link>
 
-          <Link to="/">
+          <Link to="/" onClick={scrollToTop}>
             <svg
               width="30"
               height="30"

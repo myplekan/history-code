@@ -10,7 +10,7 @@ export const RegionsPage = () => {
   return (
     <main className="pt-24 pb-[66px]">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16 px-10">
-        <h1 className="text-[52px] font-medium">Регіони України</h1>
+        <h1 className="text-[40px] font-medium">Регіони України</h1>
       </div>
 
       <div className="relative flex justify-end">

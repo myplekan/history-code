@@ -24,7 +24,7 @@ export const RegionModal: React.FC<Props> = ({ regionName, setRegion }) => {
   } = regionValues[0];
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-black-opacity-60 flex justify-center items-center">
+    <div className="fixed top-0 left-0 w-full h-full bg-black-opacity-60 flex justify-center items-center z-10">
       <div className="bg-white flex items-center gap-16 py-8 px-20">
         <div
           className="absolute left-[40px] top-[84px] w-14 h-14 inline-flex items-center justify-center rounded-full bg-white hover:bg-primary duration-300 cursor-pointer"

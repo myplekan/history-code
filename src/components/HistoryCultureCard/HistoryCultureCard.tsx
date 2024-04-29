@@ -14,7 +14,7 @@ export const HistoryCultureCard: React.FC<Props> = ({ data }) => {
   const currentUrl = location.pathname;
 
   return (
-    <div className="grow basis-50 p-2 border-2 border-transparent hover:border-gray-50 duration-300">
+    <div className="max-w-[648px] grow basis-50 p-2 border-2 border-transparent hover:border-gray-50 duration-300">
       <img
         className="w-full mb-4 object-center"
         src={process.env.PUBLIC_URL + `/images/${data.photo}`}

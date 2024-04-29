@@ -8,6 +8,7 @@ module.exports = {
       },
       flexBasis: {
         50: "calc(50% - 64px)",
+        'input': "calc(50% - 40px)",
       },
       colors: {
         "header-opacity-50": "rgba(255, 255, 255, 0.5)",

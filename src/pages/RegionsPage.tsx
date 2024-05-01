@@ -735,8 +735,6 @@ export const RegionsPage = () => {
 
             <g
               id="KyivCity"
-              target="_new"
-              href="https://en.wikipedia.org/wiki/Kiev"
             >
               <path
                 className="mapBackground capital"
@@ -923,6 +921,9 @@ export const RegionsPage = () => {
             </g>
 
             <g className="cityName cityKiev">
+              <RegionHover x={260} y={80} width={85} region={"Київ"} />
+            </g>
+            <g className="cityName Kiev">
               <RegionHover x={260} y={80} width={85} region={"Київська"} />
             </g>
             <g className="cityName cityZhytomyr">
@@ -1023,7 +1024,7 @@ export const RegionsPage = () => {
               <RegionHover x={390} y={340} width={145} region={"Автономна"} />
             </g>
             <g className="cityName citySevastopol">
-              <RegionHover x={390} y={340} width={145} region={"Автономна"} />
+              <RegionHover x={390} y={340} width={145} region={"Севастополь"} />
             </g>
           </g>
         </svg>

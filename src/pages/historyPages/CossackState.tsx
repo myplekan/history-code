@@ -10,8 +10,8 @@ export const CossackState = () => {
   const data: History = findDescription("history", 3) as History;
 
   return (
-    <main>
-      <div className="h-screen bg-black-opacity-60 mb-20">
+    <main className="flex flex-col items-center">
+      <div className="h-screen bg-black-opacity-60 mb-20 w-full">
         <img
           className="h-screen w-screen absolute -z-10 object-cover"
           src={process.env.PUBLIC_URL + "/images/banners/cossack-state.png"}
@@ -27,7 +27,7 @@ export const CossackState = () => {
         <BackArrow path="/history" />
       </div>
 
-      <div className="flex gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex gap-x-16 px-10 mb-16">
         <div className="flex w-6/12 flex-col">
           <h2 className="font-rutenia text-[52px] mb-4">
             Початок козацького руху
@@ -97,7 +97,7 @@ export const CossackState = () => {
 
       <AnimatePrint />
 
-      <div className="flex gap-x-16 px-10 mb-[136px]">
+      <div className="max-w-[1440px] flex gap-x-16 px-10 mb-[136px]">
         <div className="flex w-6/12 flex-col">
           <h2 className="font-rutenia text-[52px] mb-4">Запорозька Січ</h2>
 
@@ -144,7 +144,7 @@ export const CossackState = () => {
         </div>
       </div>
 
-      <div className="flex gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex gap-x-16 px-10 mb-16">
         <div className="flex w-6/12 flex-col">
           <h2 className="font-rutenia text-[52px] mb-4">Гетьманщина</h2>
 

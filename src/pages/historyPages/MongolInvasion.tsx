@@ -9,8 +9,8 @@ export const MongolInvasion = () => {
   const data: History = findDescription("history", 2) as History;
 
   return (
-    <main>
-      <div className="h-screen bg-black-opacity-60 mb-20">
+    <main className="flex flex-col items-center">
+      <div className="h-screen bg-black-opacity-60 mb-20 w-full">
         <img
           className="h-screen w-screen absolute -z-10 object-cover"
           src={process.env.PUBLIC_URL + "/images/banners/mongol.png"}
@@ -26,7 +26,7 @@ export const MongolInvasion = () => {
         <BackArrow path="/history" />
       </div>
 
-      <div className="flex gap-x-16 px-10 mb-8">
+      <div className="max-w-[1440px] flex gap-x-16 px-10 mb-8">
         <div className="flex w-6/12 flex-col text-gray-100">
           <h2 className="font-rutenia text-[52px] mb-4">Монгольське нашестя</h2>
 

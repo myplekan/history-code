@@ -71,13 +71,13 @@ export const LikePage = () => {
   };
 
   return (
-    <main className="min-h-min pt-[102px] px-10">
+    <main className="max-w-[1440px] mx-auto min-h-min pt-[102px] px-10">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16">
         <h1 className="text-[52px] font-medium text-gray-100">Вподобане</h1>
 
         <div className="relative pr-2 flex items-center gap-4 basis-input">
           <input
-            className="h-12 w-full p-4 border-2 border-gray-100 rounded-lg outline-0 hover:border-primary duration-300 focus:border-primary text-xl text-gray-100"
+            className="h-12 w-full p-4 border-2 border-gray-50 rounded-lg outline-0 hover:border-primary duration-300 focus:border-primary text-xl text-gray-100"
             type="text"
             placeholder="Тема..."
             value={query}

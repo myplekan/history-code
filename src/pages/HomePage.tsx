@@ -8,10 +8,10 @@ import { ArrowUp } from "../components/ArrowUp/ArrowUp";
 
 export const HomePage = () => {
   return (
-    <main>
+    <main className="flex flex-col items-center">
       <Banner />
 
-      <div className="flex flex-col justify-center items-center h-screen text-center text-white pt-11">
+      <div className="max-w-[1440px] flex flex-col justify-center items-center h-screen text-center text-white pt-11">
         <h1 className="flex flex-col font-rutenia my-2.5">
           <span className="text-[56px] leading-[56px]">Про</span>
           <span className="text-[138px] leading-[138px]">Україну</span>
@@ -39,7 +39,7 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div className="grid gap-x-5 gap-y-24 grid-cols-8 pb-16 items-center">
+      <div className="max-w-[1440px] grid gap-x-5 gap-y-24 grid-cols-8 pb-16 items-center">
         <div className="col-start-1 col-end-5 flex flex-col justify-center pl-10 text-gray-100">
           <h2 className="font-rutenia text-5xl mb-4">Про проєкт</h2>
 

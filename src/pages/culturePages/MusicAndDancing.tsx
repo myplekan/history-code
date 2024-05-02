@@ -9,8 +9,8 @@ export const MusicAndDancing = () => {
   const data: Culture = findDescription("culture", 3) as Culture;
 
   return (
-    <main>
-      <div className="h-screen bg-black-opacity-60 mb-20">
+    <main className="flex flex-col items-center">
+      <div className="h-screen bg-black-opacity-60 mb-20 w-full">
         <img
           className="h-screen w-screen absolute -z-10 object-cover"
           src={process.env.PUBLIC_URL + "/images/banners/musicAndDancing.png"}
@@ -22,7 +22,7 @@ export const MusicAndDancing = () => {
         <BackArrow path="/culture" />
       </div>
 
-      <div className="flex flex-wrap gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex flex-wrap gap-x-16 px-10 mb-16">
         <div className="flex grow basis-50 flex-col text-gray-100">
           <h2 className="font-rutenia text-[52px] mb-4 leading-[62px]">
             Фолькльорна музика
@@ -76,12 +76,12 @@ export const MusicAndDancing = () => {
       </div>
 
       <img
-        className="mb-24"
+        className="mb-24 w-full"
         src={process.env.PUBLIC_URL + "/images/full/full-musicAndDancing1.png"}
         alt="Art"
       />
 
-      <div className="flex flex-wrap gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex flex-wrap gap-x-16 px-10 mb-16">
         <div className="flex grow basis-50 flex-col text-gray-100">
           <h2 className="font-rutenia text-[52px] mb-4 leading-[62px]">
             Класична музика
@@ -143,7 +143,7 @@ export const MusicAndDancing = () => {
 
       <AnimatePrint />
 
-      <div className="flex flex-wrap gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex flex-wrap gap-x-16 px-10 mb-16">
         <div className="flex grow basis-50 flex-col text-gray-100">
           <h2 className="font-rutenia text-[52px] mb-4 leading-[62px]">
             Народні та етнічні танці
@@ -199,7 +199,7 @@ export const MusicAndDancing = () => {
       </div>
 
       <img
-        className="mb-10"
+        className="mb-10 w-full"
         src={process.env.PUBLIC_URL + "/images/full/full-musicAndDancing2.png"}
         alt="Art"
       />

@@ -21,7 +21,7 @@ export const AnimatePrint = () => {
 
   return (
     <div
-      className={classNames("flex justify-between -translate-x-[10rem]", {
+      className={classNames("max-w-[1440px] flex justify-between -translate-x-[10rem]", {
         'mb-16': pathname !== '/regions'
       })}
     >

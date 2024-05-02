@@ -9,8 +9,8 @@ export const Architecture = () => {
   const data: Culture = findDescription("culture", 5) as Culture;
 
   return (
-    <main>
-      <div className="h-screen bg-black-opacity-60 mb-20">
+    <main className="flex flex-col items-center">
+      <div className="h-screen bg-black-opacity-60 mb-20 w-full">
         <img
           className="h-screen w-screen absolute -z-10 object-cover"
           src={process.env.PUBLIC_URL + "/images/banners/architecture.png"}
@@ -24,7 +24,7 @@ export const Architecture = () => {
         <BackArrow path="/culture" />
       </div>
 
-      <div className="grid items-center grid-cols-8 gap-x-5 gap-y-[104px] px-10 mb-10">
+      <div className="max-w-[1440px] grid items-center grid-cols-8 gap-x-5 gap-y-[104px] px-10 mb-10">
         <div className="max-w-[650px] col-start-1 col-end-5">
           <div className="text-gray-100">
             <h2 className="font-rutenia text-[52px] mb-4">Софіївський собор</h2>

@@ -57,13 +57,13 @@ export const RegionsPage = () => {
   }, [searchParams]);
 
   return (
-    <main className="pt-24 pb-[66px]">
+    <main className="max-w-[1440px] mx-auto min-h-min pt-24 pb-[66px]">
       <div className="flex justify-between border-b-2 border-gray-40 mb-16 mx-10">
         <h1 className="text-[40px] font-medium text-gray-100">Регіони України</h1>
 
         <div className="relative pr-2 flex items-center gap-4 basis-input">
           <input
-            className="h-12 w-full p-4 border-2 border-gray-100 rounded-lg outline-0 hover:border-primary duration-300 focus:border-primary text-xl text-gray-100"
+            className="h-12 w-full p-4 border-2 border-gray-50 rounded-lg outline-0 hover:border-primary duration-300 focus:border-primary text-xl text-gray-100"
             type="text"
             placeholder="Київська..."
             value={query}

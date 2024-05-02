@@ -8,8 +8,8 @@ export const ModernCulture = () => {
   const data: Culture = findDescription("culture", 6) as Culture;
 
   return (
-    <main>
-      <div className="h-screen bg-black-opacity-60 mb-20">
+    <main className="flex flex-col items-center">
+      <div className="h-screen bg-black-opacity-60 mb-20 w-full">
         <img
           className="h-screen w-screen absolute -z-10 object-cover"
           src={process.env.PUBLIC_URL + "/images/banners/modernCulture.png"}
@@ -21,7 +21,7 @@ export const ModernCulture = () => {
         <BackArrow path="/culture" />
       </div>
 
-      <div className="flex flex-wrap gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex flex-wrap gap-x-16 px-10 mb-16">
         <div className="flex grow basis-50 flex-col text-gray-100">
           <h2 className="font-rutenia text-[52px] mb-4 leading-[62px]">
             Проголошення неззалежності
@@ -84,12 +84,12 @@ export const ModernCulture = () => {
       </div>
 
       <img
-        className="mb-24"
+        className="mb-24 w-full"
         src={process.env.PUBLIC_URL + "/images/full/full-modernCulture1.png"}
         alt="Art"
       />
 
-      <div className="flex flex-wrap gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex flex-wrap gap-x-16 px-10 mb-16">
         <div className="flex grow basis-50 flex-col text-gray-100">
           <h2 className="font-rutenia text-[52px] mb-4 leading-[62px]">
             Розвиток української культури сьогодні
@@ -161,7 +161,7 @@ export const ModernCulture = () => {
       </div>
 
       <img
-        className="mb-10"
+        className="mb-10 w-full"
         src={process.env.PUBLIC_URL + "/images/full/full-modernCulture2.png"}
         alt="Art"
       />

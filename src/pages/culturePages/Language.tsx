@@ -10,8 +10,8 @@ export const Language = () => {
   const data: Culture = findDescription("culture", 1) as Culture;
 
   return (
-    <main>
-      <div className="h-screen bg-black-opacity-60 mb-20">
+    <main className="flex flex-col items-center">
+      <div className="h-screen bg-black-opacity-60 mb-20 w-full">
         <img
           className="h-screen w-screen absolute -z-10 object-cover"
           src={process.env.PUBLIC_URL + "/images/banners/language.png"}
@@ -23,7 +23,7 @@ export const Language = () => {
         <BackArrow path="/culture" />
       </div>
 
-      <div className="flex flex-wrap gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex flex-wrap gap-x-16 px-10 mb-16">
         <div className="flex grow basis-50 flex-col text-gray-100 mb-12">
           <h2 className="font-rutenia text-[52px] mb-4">Українська мова</h2>
 
@@ -128,12 +128,12 @@ export const Language = () => {
       </div>
 
       <img
-        className="mb-24"
+        className="mb-24 w-full"
         src={process.env.PUBLIC_URL + "/images/full/full-language.png"}
         alt="Field"
       />
 
-      <div className="flex flex-wrap gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex flex-wrap gap-x-16 px-10 mb-16">
         <div className="flex grow basis-50 flex-col gap-y-8">
           <p>
             У період визвольних змагань <strong>(1917 – 1920рр.)</strong>{" "}
@@ -173,7 +173,7 @@ export const Language = () => {
 
       <AnimatePrint />
 
-      <div className="flex flex-wrap gap-x-16 px-10 mb-24">
+      <div className="max-w-[1440px] flex flex-wrap gap-x-16 px-10 mb-24">
         <div className="grow basis-50">
           <p>
             Українська література є однією з <strong>найбагатших</strong> і
@@ -191,7 +191,7 @@ export const Language = () => {
         </div>
       </div>
 
-      <div className="grid items-center grid-cols-8 gap-x-5 gap-y-[104px] px-10 mb-10">
+      <div className="max-w-[1440px] grid items-center grid-cols-8 gap-x-5 gap-y-[104px] px-10 mb-10">
         <div className="max-w-[650px] col-start-1 col-end-5">
           <div className="text-gray-100">
             <h2 className="font-rutenia text-[52px] mb-4">Тарас Шевченко</h2>

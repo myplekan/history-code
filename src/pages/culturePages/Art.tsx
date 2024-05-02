@@ -10,8 +10,8 @@ export const Art = () => {
   const data: Culture = findDescription("culture", 2) as Culture;
 
   return (
-    <main>
-      <div className="h-screen bg-black-opacity-60 mb-20">
+    <main className="flex flex-col items-center">
+      <div className="h-screen bg-black-opacity-60 mb-20 w-full">
         <img
           className="h-screen w-screen absolute -z-10 object-cover"
           src={process.env.PUBLIC_URL + "/images/banners/art.png"}
@@ -23,7 +23,7 @@ export const Art = () => {
         <BackArrow path="/culture" />
       </div>
 
-      <div className="grid items-center grid-cols-8 gap-x-5 px-10 mb-8">
+      <div className="max-w-[1440px] grid items-center grid-cols-8 gap-x-5 px-10 mb-8">
         <div className="max-w-[650px] col-start-1 col-end-5">
           <div className="text-gray-100">
             <h2 className="font-rutenia text-[52px] mb-4">
@@ -72,7 +72,7 @@ export const Art = () => {
         />
       </div>
 
-      <div className="flex gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex gap-x-16 px-10 mb-16">
         <p className="grow basis-50">
           <strong>Мозаїка</strong> була часто використовуваною технікою при
           оздобленні церковних споруд. Вона дозволяла створювати складні та
@@ -89,12 +89,12 @@ export const Art = () => {
       </div>
 
       <img
-        className="mb-24"
+        className="mb-24 w-full"
         src={process.env.PUBLIC_URL + "/images/full/full-art1.png"}
         alt="Art"
       />
 
-      <div className="flex flex-wrap gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex flex-wrap gap-x-16 px-10 mb-16">
         <div className="flex grow basis-50 flex-col text-gray-100">
           <h2 className="font-rutenia text-[52px] mb-4 leading-[62px]">
             Барокко та ранній класицизм в Україні
@@ -140,12 +140,12 @@ export const Art = () => {
       </div>
 
       <img
-        className="mb-24"
+        className="mb-24 w-full"
         src={process.env.PUBLIC_URL + "/images/full/full-art2.png"}
         alt="Art"
       />
 
-      <div className="grid items-center grid-cols-8 gap-x-5 gap-y-[104px] px-10 mb-36">
+      <div className="max-w-[1440px] grid items-center grid-cols-8 gap-x-5 gap-y-[104px] px-10 mb-36">
         <div className="max-w-[650px] col-start-1 col-end-5">
           <div className="text-gray-100">
             <h2 className="font-rutenia text-[52px] mb-4">
@@ -200,7 +200,7 @@ export const Art = () => {
         />
       </div>
 
-      <div className="flex justify-between px-10 mb-24">
+      <div className="max-w-[1440px] flex justify-between px-10 mb-24">
         <div className="max-w-[650px]">
           <div className="text-gray-100">
             <h2 className="font-rutenia text-[52px] mb-4">Модернізм</h2>
@@ -244,7 +244,7 @@ export const Art = () => {
 
       <AnimatePrint />
 
-      <div className="flex justify-between px-10 mb-24">
+      <div className="max-w-[1440px] flex justify-between px-10 mb-24">
         <div className="max-w-[650px]">
           <div className="text-gray-100">
             <h2 className="font-rutenia text-[52px] mb-4">Сучасність</h2>
@@ -295,7 +295,7 @@ export const Art = () => {
       </div>
 
       <img
-        className="mb-10"
+        className="mb-10 w-full"
         src={process.env.PUBLIC_URL + "/images/full/full-art3.png"}
         alt="Art"
       />

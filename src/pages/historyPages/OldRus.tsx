@@ -9,8 +9,8 @@ export const OldRus = () => {
   const data: History = findDescription("history", 1) as History;
 
   return (
-    <main>
-      <div className="h-screen bg-black-opacity-60 mb-20">
+    <main className="flex flex-col items-center">
+      <div className="h-screen bg-black-opacity-60 mb-20 w-full">
         <img
           className="h-screen w-screen absolute -z-10 object-cover"
           src={process.env.PUBLIC_URL + "/images/banners/oldrus.png"}
@@ -26,7 +26,7 @@ export const OldRus = () => {
         <BackArrow path="/history" />
       </div>
 
-      <div className="flex gap-x-16 px-10 mb-16">
+      <div className="max-w-[1440px] flex gap-x-16 px-10 mb-16">
         <div className="w-6/12">
           <h2 className="font-rutenia text-[52px] mb-4">Формування Русі</h2>
 
@@ -91,7 +91,7 @@ export const OldRus = () => {
 
       <AnimatePrint />
 
-      <div className="px-10 flex gap-x-16 mb-16">
+      <div className="max-w-[1440px] px-10 flex gap-x-16 mb-16">
         <div className="flex flex-col gap-8">
           <div className="flex items-center gap-4 text-2xl text-gray-100">
             <img

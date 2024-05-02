@@ -119,9 +119,15 @@ export const CulturePage = () => {
       </div>
 
       <div className="flex flex-wrap gap-16 justify-between pb-44">
-        {cultureItems.map((item) => (
-          <HistoryCultureCard key={item.id} data={item} />
-        ))}
+        {cultureItems.length ? (
+          cultureItems.map((item) => (
+            <HistoryCultureCard key={item.id} data={item} />
+          ))
+        ) : (
+          <h2 className="mx-auto text-2xl font-semibold leading-5 text-center">
+            Нічого не знайдено. Спробуйте ввести іншу тему
+          </h2>
+        )}
       </div>
 
       <ArrowUp />

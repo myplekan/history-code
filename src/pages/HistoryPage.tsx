@@ -119,9 +119,14 @@ export const HistoryPage = () => {
       </div>
 
       <div className="flex flex-wrap gap-16 justify-between pb-44">
-        {historyItems.map((item) => (
-          <HistoryCultureCard key={item.id} data={item} />
-        ))}
+        {historyItems.length
+          ? (
+            historyItems.map((item) => (
+              <HistoryCultureCard key={item.id} data={item} />
+            ))
+          ) : (
+            <h2 className="mx-auto text-2xl font-semibold leading-5 text-center">Нічого не знайдено. Спробуйте ввести іншу тему</h2>
+          )}
       </div>
 
       <ArrowUp />
